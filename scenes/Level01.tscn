@@ -6,4 +6,6 @@
 
 [node name="Wavegenerator" parent="." instance=ExtResource( 1 )]
 
+transform/pos = Vector2( 250, 320 )
+
 
