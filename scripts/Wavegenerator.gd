@@ -3,12 +3,12 @@ extends Node2D
 var wave = preload("res://scenes/Wave.tscn")
 
 # leave this... it is needed to be 0 for the first child wave :D
-var amplitude = 0
+var current_x = 0
+var current_y = 0
 
-var amplitudeArray = [100, 50]
-var frequencyArray = [100, 200]
-var angleArray = [0.0, 0.0]
-var colorArray = [Color(0, 0, 0), Color(1, 1, 1)]
+var amplitudeArray = [100, 50, 25, 10]
+var frequencyArray = [100, 180, 450, 700]
+var colorArray = [Color(0, 0, 0), Color(1, 1, 1), Color(1, 0, 0), Color(0, 1, 0)]
 
 func _ready():
 	set_fixed_process(true)

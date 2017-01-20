@@ -4,9 +4,21 @@ var amplitude = 0
 var frequency = 0
 var angle = 0.0
 var color = Color(0, 0, 0)
+var center = Vector2(0, 0)
+
+var current_x = 0.0
+var current_y = 0.0
 
 func _ready():
-	pass
+	set_fixed_process(true)
+
+func _fixed_process(delta):
+	center = Vector2(get_parent().current_x, get_parent().current_y)
+	angle = (gamemanager.time_elapsed/100) * frequency
+	current_x = center.x + sin(angle) * amplitude
+	current_y = center.y + cos(angle) * amplitude
+	
+	update()
 
 func set_vars(amp, freq, col):
 	amplitude = amp
@@ -26,6 +38,6 @@ func draw_transparent_circle (center, radius, color):
         draw_line(points_arc[indexPoint], points_arc[indexPoint+1], color)
 
 func _draw():
-	var center = Vector2(0, get_parent().amplitude)
-	draw_line(center, Vector2(center.x, center.y + amplitude), color, 2.0)
+	#draw_line(center, Vector2(current_x, current_y + center.y + amplitude), color, 2.0)
+	draw_line(center, Vector2(current_x, current_y), color, 2.0)
 	draw_transparent_circle(center, amplitude, color)
