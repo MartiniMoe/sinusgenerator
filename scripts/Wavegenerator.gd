@@ -1,6 +1,8 @@
 extends Node2D
 
 var wave = preload("res://scenes/Wave.tscn")
+var line_scene = preload("res://scenes/Line.tscn")
+var circle_scene = preload("res://scenes/Circle.tscn")
 
 # leave this... it is needed to be 0 for the first child wave :D
 var current_x = 0
@@ -19,6 +21,8 @@ func _ready():
 		var new_wave = wave.instance()
 		new_wave.set_name("wave" + str(i))
 		new_wave.set_vars(amplitudeArray[i], frequencyArray[i], colorArray[i])
+		#new_wave.cur_circle=circle_scene.instance()
+		#new_wave.cur_line=line_scene.instance()
 		# add wave as child to last added wave
 		last_added_child.add_child(new_wave)
 		last_added_child = new_wave
