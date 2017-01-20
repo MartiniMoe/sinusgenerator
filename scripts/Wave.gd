@@ -14,7 +14,7 @@ func _ready():
 
 func _fixed_process(delta):
 	center = Vector2(get_parent().current_x, get_parent().current_y)
-	angle = (gamemanager.time_elapsed/100) * frequency
+	angle += (gamemanager.time_delta / 100) * (frequency)
 	current_x = center.x + sin(angle) * amplitude
 	current_y = center.y + cos(angle) * amplitude
 	

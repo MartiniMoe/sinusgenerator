@@ -7,7 +7,7 @@ var current_x = 0
 var current_y = 0
 
 var amplitudeArray = [100, 50, 25, 10]
-var frequencyArray = [100, 180, 450, 700]
+var frequencyArray = [100, 180, 230, 390]
 var colorArray = [Color(0, 0, 0), Color(1, 1, 1), Color(1, 0, 0), Color(0, 1, 0)]
 
 func _ready():

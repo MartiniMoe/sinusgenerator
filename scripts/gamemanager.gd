@@ -5,6 +5,7 @@ extends Node
 # IT IS ACCESSABLE AS A SINGLETON
 
 var time_elapsed = 0.0
+var time_delta = 0.0
 var wavegenerator
 var wave1
 var wave2
@@ -22,4 +23,5 @@ func get_waves():
 	wave4 = wave3.get_node("wave3")
 
 func _fixed_process(delta):
+	time_delta = delta
 	time_elapsed += delta

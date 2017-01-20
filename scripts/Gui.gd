@@ -1,14 +1,15 @@
 extends Control
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
-
 func _ready():
-	# Called every time the node is added to the scene.
-	# Initialization here
-	pass
+	get_node("Waves/HSplitContainer/Wave1/Sliders/Frequency/Slider1f").set_value(gamemanager.wave1.frequency)
+	get_node("Waves/HSplitContainer/Wave2/Sliders/Frequency/Slider2f").set_value(gamemanager.wave2.frequency)
+	get_node("Waves/HSplitContainer2/Wave3/Sliders/Frequency/Slider3f").set_value(gamemanager.wave3.frequency)
+	get_node("Waves/HSplitContainer2/Wave4/Sliders/Frequency/Slider4f").set_value(gamemanager.wave4.frequency)
 
+	get_node("Waves/HSplitContainer/Wave1/Sliders/Amplitude/Slider1a").set_value(gamemanager.wave1.amplitude)
+	get_node("Waves/HSplitContainer/Wave2/Sliders/Amplitude/Slider2a").set_value(gamemanager.wave2.amplitude)
+	get_node("Waves/HSplitContainer2/Wave3/Sliders/Amplitude/Slider3a").set_value(gamemanager.wave3.amplitude)
+	get_node("Waves/HSplitContainer2/Wave4/Sliders/Amplitude/Slider4a").set_value(gamemanager.wave4.amplitude)
 
 func _on_Slider1f_value_changed( value ):
 	gamemanager.wave1.frequency = value
