@@ -17,7 +17,10 @@ func _ready():
 	var last_added_child = self
 	for i in range(amplitudeArray.size()):
 		var new_wave = wave.instance()
+		new_wave.set_name("wave" + str(i))
 		new_wave.set_vars(amplitudeArray[i], frequencyArray[i], colorArray[i])
 		# add wave as child to last added wave
 		last_added_child.add_child(new_wave)
 		last_added_child = new_wave
+	
+	gamemanager.get_waves()
