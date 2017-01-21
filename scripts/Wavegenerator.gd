@@ -17,7 +17,7 @@ var current_pos = Vector2(0,0)
 
 var amplitudeArray = [100, 50, 25, 10]
 var frequencyArray = [100, 180, 230, 390]
-var colorArray = [Color(0, 0, 0), Color(1, 1, 1), Color(1, 0, 0), Color(0, 1, 0)]
+var colorArray = [Color(0.4, 0.4, 0.6), Color(0.5, 0.5, 0.7), Color(0.6, 0.6, 0.8), Color(0.9, 0.9, 1.0)]
 
 func _ready():
 	set_fixed_process(true)
