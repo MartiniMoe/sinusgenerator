@@ -41,7 +41,6 @@ func _ready():
 	gamemanager.get_waves()
 	
 func _fixed_process(delta):
-	
 	var amp_factor=0.001;
 	
 	var amp1=amp_factor*gamemanager.wave1.amplitude;
