@@ -28,14 +28,15 @@ func _fixed_process(delta):
 	t += delta / 100
 	
 	var pos_y = eval_wave(base_pos.x)
-	
-	var rect=get_child(0).get_texture().get_data().get_used_rect().grow(get_child(0).get_scale().x)
+
+	var pos = get_node("Sprite").get_global_pos()
+	var size = get_node("Sprite").get_texture().get_size()
+	size *= get_node("Sprite").get_scale()
+	var rect = Rect2(pos, size)
+	#print (rect)
 	
 	var eval_point=Vector2(get_pos().x,eval_wave(get_pos().x))
-	#var eval1=eval_wave(rect.pos.x)
-	#var eval2=eval_wave(rect.end.x)
 	
-	#if rect.has_point(eval_point):
 	if rect.has_point(get_viewport().get_mouse_pos()):
 		print("collision")
 	

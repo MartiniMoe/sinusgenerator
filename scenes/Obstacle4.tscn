@@ -11,5 +11,7 @@ script/script = ExtResource( 1 )
 
 transform/scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 2 )
+region = true
+region_rect = Rect2( 0, 0, 910, 850 )
 
 

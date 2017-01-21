@@ -1,11 +1,10 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=6 format=1]
 
 [ext_resource path="res://scripts/Level.gd" type="Script" id=1]
 [ext_resource path="res://scenes/Wavegenerator.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scripts/WaveInfo.gd" type="Script" id=3]
-[ext_resource path="res://scenes/Obstacle2.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/Obstacle5.tscn" type="PackedScene" id=5]
-[ext_resource path="res://sprites/nextlevel_button.png" type="Texture" id=6]
+[ext_resource path="res://scenes/Obstacle5.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sprites/nextlevel_button.png" type="Texture" id=5]
 
 [node name="Level01" type="Node2D"]
 
@@ -32,109 +31,9 @@ freq4 = 20.0
 phase4 = 0.0
 amp4 = 30.0
 
-[node name="a" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 535.714, 372.444 )
-
-[node name="Obstacle4 2" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 664.95, 375.164 )
-
-[node name="Obstacle43" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 795.95, 375.164 )
-
-[node name="Obstacle44" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 925.95, 375.164 )
-
-[node name="Obstacle45" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 1054.95, 375.164 )
-
-[node name="Obstacle46" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 1184.95, 375.164 )
-
-[node name="c" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 601.012, 373.804 )
-
-[node name="Obstacle4" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 730.248, 376.525 )
-
-[node name="Obstacle5" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 861.248, 376.525 )
-
-[node name="Obstacle9 2" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 991.248, 376.525 )
-
-[node name="Obstacle93" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 1120.25, 376.525 )
-
-[node name="Obstacle94" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 1250.25, 376.525 )
-
-[node name="Obstacle95" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 1313.25, 376.525 )
-
-[node name="b" parent="." instance=ExtResource( 5 )]
+[node name="b" parent="." instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 505.166, 374.715 )
-
-[node name="Obstacle7 2" parent="." instance=ExtResource( 5 )]
-
-transform/pos = Vector2( 634.401, 377.436 )
-
-[node name="Obstacle73" parent="." instance=ExtResource( 5 )]
-
-transform/pos = Vector2( 765.401, 377.436 )
-
-[node name="Obstacle74" parent="." instance=ExtResource( 5 )]
-
-transform/pos = Vector2( 895.401, 377.436 )
-
-[node name="Obstacle75" parent="." instance=ExtResource( 5 )]
-
-transform/pos = Vector2( 1024.4, 377.436 )
-
-[node name="Obstacle76" parent="." instance=ExtResource( 5 )]
-
-transform/pos = Vector2( 1154.4, 377.436 )
-
-[node name="d" parent="." instance=ExtResource( 5 )]
-
-transform/pos = Vector2( 571.824, 376.076 )
-
-[node name="Obstacle7" parent="." instance=ExtResource( 5 )]
-
-transform/pos = Vector2( 701.059, 378.796 )
-
-[node name="Obstacle8" parent="." instance=ExtResource( 5 )]
-
-transform/pos = Vector2( 832.059, 378.796 )
-
-[node name="Obstacle9" parent="." instance=ExtResource( 5 )]
-
-transform/pos = Vector2( 962.059, 378.796 )
-
-[node name="Obstacle10" parent="." instance=ExtResource( 5 )]
-
-transform/pos = Vector2( 1091.06, 378.796 )
-
-[node name="Obstacle11" parent="." instance=ExtResource( 5 )]
-
-transform/pos = Vector2( 1221.06, 378.796 )
-
-[node name="Obstacle12" parent="." instance=ExtResource( 5 )]
-
-transform/pos = Vector2( 1284.06, 378.796 )
 
 [node name="NextLevelButton" type="TextureButton" parent="."]
 
@@ -150,6 +49,6 @@ margin/bottom = 754.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 6 )
+textures/normal = ExtResource( 5 )
 
 
