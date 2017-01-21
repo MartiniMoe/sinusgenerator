@@ -3,7 +3,7 @@ extends Control
 var mainScene = preload("res://scenes/Main.tscn")
 
 func _ready():
-	pass
+	get_node("AnimationPlayer").play("credits")
 
 func changeToScene(path):
 	var root = get_tree().get_root()
