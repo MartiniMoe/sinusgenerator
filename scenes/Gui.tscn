@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=7 format=1]
 
 [ext_resource path="res://scripts/Gui.gd" type="Script" id=1]
 [ext_resource path="res://fonts/Hack-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://themes/slider_theme.tres" type="Theme" id=3]
+[ext_resource path="res://sprites/sliders_bg.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -621,6 +622,14 @@ align = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/pos = Vector2( 237.523, 72.9458 )
+transform/scale = Vector2( 0.2, 0.175 )
+z/z = -3
+texture = ExtResource( 4 )
+modulate = Color( 0.835938, 0.835938, 0.835938, 1 )
 
 [connection signal="value_changed" from="Wave1/Slider1f" to="." method="_on_Slider1f_value_changed"]
 

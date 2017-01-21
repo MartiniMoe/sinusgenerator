@@ -7,4 +7,5 @@
 
 VSlider/icons/grabber = ExtResource( 1 )
 VSlider/icons/grabber_hilite = ExtResource( 2 )
+VSlider/icons/tick = null
 
