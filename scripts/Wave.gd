@@ -55,7 +55,7 @@ func set_amp(amp):
 
 func set_freq(freq):
 	frequency=freq
-	angle_offset=angle - time * frequency
+	#angle_offset=angle - time * frequency
 
 func set_phase(phase):
 	angle_offset=phase
