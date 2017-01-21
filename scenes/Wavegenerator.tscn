@@ -1,7 +1,29 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://scripts/Wavegenerator.gd" type="Script" id=1]
 [ext_resource path="res://sprites/generator.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "Rotation"
+length = 10.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Background:transform/rot")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 5, 10 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ 0.0, 180.0, 360.0 ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("Background:transform/scale")
+tracks/1/interp = 2
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 5, 10 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Vector2( 0.25, 0.25 ), Vector2( 0.3, 0.3 ), Vector2( 0.25, 0.25 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("Background:visibility/opacity")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "update":0, "values":[ 1.0, 0.75, 1.0, 0.5, 1.25, 0.8, 1.0, 0.75, 1.0, 0.5, 1.0, 0.75, 1.0, 0.5, 1.25, 0.8, 1.0, 0.75, 1.0, 0.5 ] }
 
 [node name="Wavegenerator" type="Node2D"]
 
@@ -9,8 +31,21 @@ script/script = ExtResource( 1 )
 
 [node name="Background" type="Sprite" parent="."]
 
-transform/scale = Vector2( 0.25, 0.25 )
+visibility/opacity = 0.963499
+transform/rot = 104.715
+transform/scale = Vector2( 0.283621, 0.283621 )
 z/z = -1
 texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/Rotation = SubResource( 1 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
 
 
