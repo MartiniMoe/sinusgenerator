@@ -65,7 +65,7 @@ max_lines_visible = -1
 
 [node name="Sprite" type="Sprite" parent="Wave1/Wave1Label"]
 
-transform/pos = Vector2( 0, 5 )
+transform/pos = Vector2( 4, 8 )
 z/z = -1
 texture = ExtResource( 3 )
 modulate = Color( 0.4, 0.4, 0.6, 1 )
@@ -223,7 +223,7 @@ max_lines_visible = -1
 
 [node name="Sprite" type="Sprite" parent="Wave2/Wave2Label"]
 
-transform/pos = Vector2( 0, 5 )
+transform/pos = Vector2( 4, 8 )
 z/z = -1
 texture = ExtResource( 3 )
 modulate = Color( 0.5, 0.5, 0.7, 1 )
@@ -381,7 +381,7 @@ max_lines_visible = -1
 
 [node name="Sprite" type="Sprite" parent="Wave3/Wave3Label"]
 
-transform/pos = Vector2( 0, 5 )
+transform/pos = Vector2( 4, 8 )
 z/z = -1
 texture = ExtResource( 3 )
 modulate = Color( 0.6, 0.6, 0.8, 1 )
@@ -539,7 +539,7 @@ max_lines_visible = -1
 
 [node name="Sprite" type="Sprite" parent="Wave4/Wave4Label"]
 
-transform/pos = Vector2( 0, 5 )
+transform/pos = Vector2( 4, 8 )
 z/z = -1
 texture = ExtResource( 3 )
 modulate = Color( 0.9, 0.9, 1, 1 )
