@@ -69,3 +69,4 @@ func _fixed_process(delta):
 func _draw():
 	var cur_pos=gamemanager.wave4.current_pos
 	draw_line(cur_pos, Vector2(250,cur_pos.y), Color(1,1,1,1), 2.0)
+	draw_circle(Vector2(250,cur_pos.y), 4, Color(1,1,1,1))
