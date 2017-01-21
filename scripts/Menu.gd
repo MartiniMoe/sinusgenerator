@@ -21,4 +21,4 @@ func _on_btnStartGame_pressed():
 	changeToScene("res://scenes/Level01.tscn")
 
 func _on_btnTutorial_pressed():
-	changeToScene("res://scenes/Intro.tscn")
+	changeToScene("res://scenes/Tutorial.tscn")
