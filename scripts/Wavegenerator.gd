@@ -16,6 +16,7 @@ var colorArray = [Color(0, 0, 0), Color(1, 1, 1), Color(1, 0, 0), Color(0, 1, 0)
 
 func _ready():
 	set_fixed_process(true)
+	get_node("AnimationPlayer").play("Rotation")
 	
 	var wave_shader=wave_shader_scene.instance()
 	add_child(wave_shader)
