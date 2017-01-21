@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=8 format=1]
 
 [ext_resource path="res://scripts/Gui.gd" type="Script" id=1]
 [ext_resource path="res://fonts/Hack-Regular.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://themes/slider_theme.tres" type="Theme" id=3]
-[ext_resource path="res://sprites/sliders_bg.png" type="Texture" id=4]
+[ext_resource path="res://sprites/circle_2.png" type="Texture" id=3]
+[ext_resource path="res://themes/slider_theme.tres" type="Theme" id=4]
+[ext_resource path="res://sprites/sliders_bg.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -53,12 +54,21 @@ margin/top = 0.0
 margin/right = 70.0
 margin/bottom = 19.0
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.4, 0.4, 0.6, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_as_outline = 1
 text = "Wave #1"
 align = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="Wave1/Wave1Label"]
+
+transform/pos = Vector2( 0, 5 )
+z/z = -1
+texture = ExtResource( 3 )
+modulate = Color( 0.4, 0.4, 0.6, 1 )
 
 [node name="Slider1f" type="VSlider" parent="Wave1"]
 
@@ -67,7 +77,7 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-theme/theme = ExtResource( 3 )
+theme/theme = ExtResource( 4 )
 margin/left = 0.0
 margin/top = 32.0
 margin/right = 16.0
@@ -107,7 +117,7 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-theme/theme = ExtResource( 3 )
+theme/theme = ExtResource( 4 )
 margin/left = 32.0
 margin/top = 32.0
 margin/right = 48.0
@@ -147,7 +157,7 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-theme/theme = ExtResource( 3 )
+theme/theme = ExtResource( 4 )
 margin/left = 64.0
 margin/top = 32.0
 margin/right = 80.0
@@ -202,12 +212,21 @@ margin/top = 0.0
 margin/right = 70.0
 margin/bottom = 19.0
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.5, 0.5, 0.7, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_as_outline = 1
 text = "Wave #2"
 align = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="Wave2/Wave2Label"]
+
+transform/pos = Vector2( 0, 5 )
+z/z = -1
+texture = ExtResource( 3 )
+modulate = Color( 0.5, 0.5, 0.7, 1 )
 
 [node name="Slider2f" type="VSlider" parent="Wave2"]
 
@@ -216,7 +235,7 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-theme/theme = ExtResource( 3 )
+theme/theme = ExtResource( 4 )
 margin/left = 0.0
 margin/top = 32.0
 margin/right = 16.0
@@ -256,7 +275,7 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-theme/theme = ExtResource( 3 )
+theme/theme = ExtResource( 4 )
 margin/left = 32.0
 margin/top = 32.0
 margin/right = 48.0
@@ -296,7 +315,7 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-theme/theme = ExtResource( 3 )
+theme/theme = ExtResource( 4 )
 margin/left = 64.0
 margin/top = 32.0
 margin/right = 80.0
@@ -351,12 +370,21 @@ margin/top = 0.0
 margin/right = 70.0
 margin/bottom = 19.0
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.6, 0.6, 0.8, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_as_outline = 1
 text = "Wave #3"
 align = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="Wave3/Wave3Label"]
+
+transform/pos = Vector2( 0, 5 )
+z/z = -1
+texture = ExtResource( 3 )
+modulate = Color( 0.6, 0.6, 0.8, 1 )
 
 [node name="Slider3f" type="VSlider" parent="Wave3"]
 
@@ -365,7 +393,7 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-theme/theme = ExtResource( 3 )
+theme/theme = ExtResource( 4 )
 margin/left = 0.0
 margin/top = 32.0
 margin/right = 16.0
@@ -405,7 +433,7 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-theme/theme = ExtResource( 3 )
+theme/theme = ExtResource( 4 )
 margin/left = 32.0
 margin/top = 32.0
 margin/right = 48.0
@@ -445,7 +473,7 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-theme/theme = ExtResource( 3 )
+theme/theme = ExtResource( 4 )
 margin/left = 64.0
 margin/top = 32.0
 margin/right = 80.0
@@ -501,11 +529,20 @@ margin/right = 70.0
 margin/bottom = 19.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.9, 0.9, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_as_outline = 1
 text = "Wave #4"
 align = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="Wave4/Wave4Label"]
+
+transform/pos = Vector2( 0, 5 )
+z/z = -1
+texture = ExtResource( 3 )
+modulate = Color( 0.9, 0.9, 1, 1 )
 
 [node name="Slider4f" type="VSlider" parent="Wave4"]
 
@@ -514,7 +551,7 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-theme/theme = ExtResource( 3 )
+theme/theme = ExtResource( 4 )
 margin/left = 0.0
 margin/top = 32.0
 margin/right = 16.0
@@ -554,7 +591,7 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-theme/theme = ExtResource( 3 )
+theme/theme = ExtResource( 4 )
 margin/left = 32.0
 margin/top = 32.0
 margin/right = 48.0
@@ -594,7 +631,7 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-theme/theme = ExtResource( 3 )
+theme/theme = ExtResource( 4 )
 margin/left = 64.0
 margin/top = 32.0
 margin/right = 80.0
@@ -627,12 +664,12 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Background" type="Sprite" parent="."]
 
 transform/pos = Vector2( 237.523, 72.9458 )
 transform/scale = Vector2( 0.2, 0.175 )
 z/z = -3
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 modulate = Color( 0.839844, 0.839844, 0.839844, 1 )
 
 [connection signal="value_changed" from="Wave1/Slider1f" to="." method="_on_Slider1f_value_changed"]

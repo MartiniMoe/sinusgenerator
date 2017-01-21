@@ -7,6 +7,5 @@
 transform/pos = Vector2( 700, 350 )
 z/z = -12
 texture = ExtResource( 1 )
-modulate = Color( 0.464844, 0.464844, 0.464844, 1 )
 
 

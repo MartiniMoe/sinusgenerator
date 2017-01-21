@@ -5,7 +5,7 @@ var line_scene = preload("res://scenes/Line.tscn")
 var circle_scene = preload("res://scenes/Circle.tscn")
 var wave_shader_scene = preload("res://scenes/Shadersprite.tscn")
 
-var wave_shader_size=Vector2(800,1000)
+var wave_shader_size=Vector2(1500,1000)
 var wl_factor=42000
 
 var wave_start=250
