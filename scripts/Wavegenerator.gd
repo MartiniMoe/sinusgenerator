@@ -5,6 +5,11 @@ var line_scene = preload("res://scenes/Line.tscn")
 var circle_scene = preload("res://scenes/Circle.tscn")
 var wave_shader_scene = preload("res://scenes/Shadersprite.tscn")
 
+var wave_shader_size=Vector2(800,1000)
+var wl_factor=100
+
+var wave_start=650
+
 var wave_material
 
 # leave this... it is needed to be 0 for the first child wave :D
@@ -19,9 +24,10 @@ func _ready():
 	get_node("AnimationPlayer").play("Rotation")
 	
 	var wave_shader=wave_shader_scene.instance()
+	wave_shader.set_pos(Vector2(wave_start,0))
+	wave_shader.set_scale(wave_shader_size)
 	add_child(wave_shader)
 	wave_material=wave_shader.get_material()
-	
 	
 	# add child waves
 	var last_added_child = self
@@ -29,10 +35,15 @@ func _ready():
 		var new_wave = wave.instance()
 		new_wave.set_name("wave" + str(i))
 		new_wave.set_vars(amplitudeArray[i], frequencyArray[i], colorArray[i])
+		
 		new_wave.cur_circle=circle_scene.instance()
+		new_wave.cur_circle.set_scale(Vector2(new_wave.sprite_size,new_wave.sprite_size))
 		new_wave.cur_circle.set_material(new_wave.cur_circle.get_material().duplicate())
+		
 		new_wave.cur_line=line_scene.instance()
+		new_wave.cur_line.set_scale(Vector2(new_wave.sprite_size,new_wave.sprite_size))
 		new_wave.cur_line.set_material(new_wave.cur_line.get_material().duplicate())
+		
 		new_wave.add_childs()
 		# add wave as child to last added wave
 		last_added_child.add_child(new_wave)
@@ -41,17 +52,17 @@ func _ready():
 	gamemanager.get_waves()
 	
 func _fixed_process(delta):
-	var amp_factor=0.001;
-	
+	var amp_factor=1/wave_shader_size.y;
+
 	var amp1=amp_factor*gamemanager.wave1.amplitude;
 	var amp2=amp_factor*gamemanager.wave2.amplitude;
 	var amp3=amp_factor*gamemanager.wave3.amplitude;
 	var amp4=amp_factor*gamemanager.wave4.amplitude;
 	
-	var wl1=100/gamemanager.wave1.frequency;
-	var wl2=100/gamemanager.wave2.frequency;
-	var wl3=100/gamemanager.wave3.frequency;
-	var wl4=100/gamemanager.wave4.frequency;
+	var wl1=wl_factor/gamemanager.wave1.frequency;
+	var wl2=wl_factor/gamemanager.wave2.frequency;
+	var wl3=wl_factor/gamemanager.wave3.frequency;
+	var wl4=wl_factor/gamemanager.wave4.frequency;
 	
 	var ph1=-gamemanager.wave1.angle;
 	var ph2=-gamemanager.wave2.angle;
@@ -67,5 +78,5 @@ func _fixed_process(delta):
 	
 func _draw():
 	var cur_pos=gamemanager.wave4.current_pos
-	draw_line(cur_pos, Vector2(250,cur_pos.y), Color(1,1,1,1), 2.0)
-	draw_circle(Vector2(250,cur_pos.y), 4, Color(1,1,1,1))
+	draw_line(cur_pos, Vector2(wave_start-400,cur_pos.y), Color(1,1,1,1), 2.0)
+	draw_circle(Vector2(wave_start-400,cur_pos.y), 4, Color(1,1,1,1))

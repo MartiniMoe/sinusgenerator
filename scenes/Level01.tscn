@@ -22,15 +22,15 @@ script/script = ExtResource( 3 )
 freq1 = 100.0
 phase1 = 0.0
 amp1 = 100.0
-freq2 = 0.0
+freq2 = 200.0
 phase2 = 0.0
-amp2 = 0.0
-freq3 = 0.0
-phase3 = 0.0
-amp3 = 0.0
-freq4 = 0.0
+amp2 = 50.0
+freq3 = 50.0
+phase3 = 20.0
+amp3 = 20.0
+freq4 = 20.0
 phase4 = 0.0
-amp4 = 0.0
+amp4 = 30.0
 
 [node name="a" parent="." instance=ExtResource( 4 )]
 
