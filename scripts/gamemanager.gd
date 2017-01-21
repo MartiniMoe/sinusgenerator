@@ -6,6 +6,7 @@ extends Node
 
 var time_elapsed = 0.0
 var time_delta = 0.0
+var main
 var wavegenerator
 var wave1
 var wave2
@@ -16,7 +17,8 @@ func _ready():
 	set_fixed_process(true)
 
 func get_waves():
-	wavegenerator = get_node("/root/Main/Level01/Wavegenerator")
+	main = get_node("/root/Main")
+	wavegenerator = main.currentLevel.get_node("Wavegenerator")
 	wave1 = wavegenerator.get_node("wave0")
 	wave2 = wave1.get_node("wave1")
 	wave3 = wave2.get_node("wave2")

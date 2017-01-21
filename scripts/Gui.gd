@@ -1,6 +1,9 @@
 extends Control
 
 func _ready():
+	pass
+
+func set_gui_waves():
 	get_node("Wave1/Slider1f").set_value(gamemanager.wave1.frequency)
 	get_node("Wave2/Slider2f").set_value(gamemanager.wave2.frequency)
 	get_node("Wave3/Slider3f").set_value(gamemanager.wave3.frequency)
