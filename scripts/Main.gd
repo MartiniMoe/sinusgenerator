@@ -8,4 +8,4 @@ func _ready():
 func loadLevel(path):
 	currentLevel = load(path).instance()
 	add_child(currentLevel)
-	get_node("Gui").set_gui_waves()
+	#get_node("Gui").set_gui_waves()
