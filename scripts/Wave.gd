@@ -1,7 +1,7 @@
 extends Node2D
 
-var amplitude = 0
-var frequency = 0
+export var amplitude = 0
+export var frequency = 0
 var angle_offset = 0.0
 var angle = 0.0
 var color = Color(0, 0, 0)
@@ -26,6 +26,9 @@ func add_childs():
 	
 	add_child(cur_circle)
 	circle_mat=cur_circle.get_material()
+	
+	cur_line.set_z(-1)
+	cur_circle.set_z(-1)
 
 func _fixed_process(delta):
 	center = get_parent().current_pos
