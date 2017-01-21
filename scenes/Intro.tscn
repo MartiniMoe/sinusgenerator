@@ -165,16 +165,16 @@ autoplay = ""
 [node name="WaveInfo" type="Node2D" parent="."]
 
 script/script = ExtResource( 4 )
-freq1 = 1.0
+freq1 = 100.0
 phase1 = 0.0
 amp1 = 1.0
-freq2 = 1.0
+freq2 = 100.0
 phase2 = 0.0
 amp2 = 1.0
-freq3 = 1.0
+freq3 = 100.0
 phase3 = 0.0
 amp3 = 1.0
-freq4 = 1.0
+freq4 = 100.0
 phase4 = 0.0
 amp4 = 1.0
 
