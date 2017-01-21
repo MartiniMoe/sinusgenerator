@@ -10,7 +10,7 @@ var wavegen
 
 func _ready():
 	wavegen=gamemanager.wavegenerator
-	base_pos = self.get_pos() - Vector2(wavegen.wave_start-150,0)
+	base_pos = self.get_pos() - Vector2(wavegen.wave_start*2,0)
 	print(base_pos.x)
 	set_fixed_process(true)
 
@@ -25,4 +25,4 @@ func _fixed_process(delta):
 	for i in range(4):
 		pos_y += amps[i] * cos( freqs[i] * (t - factor * base_pos.x) + phases[i])
 	
-	self.set_pos(Vector2(base_pos.x+wavegen.wave_start-150, base_pos.y + pos_y))
+	self.set_pos(Vector2(base_pos.x+wavegen.wave_start*2, base_pos.y + pos_y))
