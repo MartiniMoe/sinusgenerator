@@ -5,9 +5,7 @@ var frequency = 0
 var angle = 0.0
 var color = Color(0, 0, 0)
 var center = Vector2(0, 0)
-
-var current_x = 0.0
-var current_y = 0.0
+var current_pos = Vector2(0,0)
 
 var cur_circle
 var cur_line
@@ -27,10 +25,9 @@ func _ready():
 	#circle_mat=cur_circle.get_material()
 
 func _fixed_process(delta):
-	center = Vector2(get_parent().current_x, get_parent().current_y)
+	center = get_parent().current_pos
 	angle += (gamemanager.time_delta / 100) * (frequency)
-	current_x = center.x + sin(angle) * amplitude
-	current_y = center.y + cos(angle) * amplitude
+	current_pos = center + Vector2(sin(angle)*amplitude,cos(angle)*amplitude)
 	
 	update()
 
@@ -64,5 +61,5 @@ func _draw():
 	#circle_mat.set_shader_param("circle_col",color)
 	#circle_mat.set_shader_param("width",.003)
 	
-	draw_line(center, Vector2(current_x, current_y), color, 2.0)
+	draw_line(center, current_pos, color, 2.0)
 	draw_transparent_circle(center, amplitude, color)

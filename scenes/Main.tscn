@@ -9,9 +9,4 @@
 
 [node name="Gui" parent="." instance=ExtResource( 2 )]
 
-margin/left = 24.0
-margin/top = 586.0
-margin/right = 64.0
-margin/bottom = 626.0
-
 

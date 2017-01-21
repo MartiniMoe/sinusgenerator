@@ -4,18 +4,22 @@
 
 [sub_resource type="CanvasItemShader" id=1]
 
-_code = { "fragment":"vec4 wavelen=vec4(1,.5,.33,.1);\nvec4 amp=vec4(.1,.1,.1,.1);\n\nfloat border=.003;\n\nfloat thickness=.0;\n\nvec3 fg_col=vec3(1);\nvec3 bg_col=vec3(0);\n\nfloat pi=3.14146;\n\nvec2 uv=UV;\nuv.y-=.5;\n\nfloat wave=0;\nfloat wave_drv=0;\n\nwave+=amp.x*sin(uv.x/wavelen.x*2*pi);\nwave_drv+=amp.x/wavelen.x*2*pi*cos(uv.x/wavelen.x*2*pi);\n\nwave+=amp.y*sin(uv.x/wavelen.y*2*pi);\nwave_drv+=amp.y/wavelen.y*2*pi*cos(uv.x/wavelen.y*2*pi);\n\nwave+=amp.z*sin(uv.x/wavelen.z*2*pi);\nwave_drv+=amp.z/wavelen.z*2*pi*cos(uv.x/wavelen.z*2*pi);\n\nwave+=amp.w*sin(uv.x/wavelen.w*2*pi);\nwave_drv+=amp.w/wavelen.w*2*pi*cos(uv.x/wavelen.w*2*pi);\n\nfloat dis=abs(uv.y-wave);\ndis/=length(vec2(1,wave_drv));\n\nvec3 col=mix(fg_col,bg_col,smoothstep(0,border,dis-thickness));\n\nCOLOR=vec4(col,1);", "fragment_ofs":0, "light":"", "light_ofs":0, "vertex":"", "vertex_ofs":0 }
+_code = { "fragment":"uniform vec4 wavelen;\nuniform vec4 amp;\nuniform vec4 phase;\nuniform float width;\n\nvec4 fg_col=vec4(1);\nvec4 bg_col=vec4(0);\n\nfloat pi=3.14146;\n\nvec2 uv=UV;\nuv.y-=.5;\n\nfloat wave=0;\nfloat wave_drv=0;\n\nwave+=amp.x*cos(uv.x/wavelen.x*2*pi+phase.x);\nwave_drv+=amp.x/wavelen.x*2*pi*-sin(uv.x/wavelen.x*2*pi+phase.x);\n\nwave+=amp.y*cos(uv.x/wavelen.y*2*pi+phase.y);\nwave_drv+=amp.y/wavelen.y*2*pi*-sin(uv.x/wavelen.y*2*pi+phase.y);\n\nwave+=amp.z*cos(uv.x/wavelen.z*2*pi+phase.z);\nwave_drv+=amp.z/wavelen.z*2*pi*-sin(uv.x/wavelen.z*2*pi+phase.z);\n\nwave+=amp.w*cos(uv.x/wavelen.w*2*pi+phase.w);\nwave_drv+=amp.w/wavelen.w*2*pi*-sin(uv.x/wavelen.w*2*pi+phase.w);\n\nfloat dis=abs(uv.y-wave);\ndis/=length(vec2(1,wave_drv));\n\nvec4 col=mix(fg_col,bg_col,smoothstep(0,width,dis));\n\nCOLOR=col;", "fragment_ofs":0, "light":"", "light_ofs":0, "vertex":"", "vertex_ofs":0 }
 
 [sub_resource type="CanvasItemMaterial" id=2]
 
 shader/shader = SubResource( 1 )
 shader/shading_mode = 0
+shader_param/wavelen = Plane( 0, 0, 0, 0 )
+shader_param/amp = Plane( 0, 0, 0, 0 )
+shader_param/phase = Plane( 0, 0, 0, 0 )
+shader_param/width = 0.0
 
 [node name="Sprite" type="Sprite"]
 
 material/material = SubResource( 2 )
-transform/scale = Vector2( 600, 600 )
+transform/scale = Vector2( 1000, 1000 )
 texture = ExtResource( 1 )
-offset = Vector2( 0.5, 0.5 )
+offset = Vector2( 0.75, 0 )
 
 
