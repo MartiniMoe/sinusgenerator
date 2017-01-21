@@ -1,7 +1,5 @@
 [gd_scene load_steps=4 format=1]
 
-[ext_resource path="res://sprites/dummy.png" type="Texture" id=1]
-
 [sub_resource type="CanvasItemShader" id=1]
 
 _code = { "fragment":"uniform vec4 circle_col;\nuniform float radius;\nuniform float width;\nuniform vec2 pos;\n\nvec4 bg_col=vec4(0);\n\nfloat dis=abs(radius-length(UV-pos));\n\nvec4 col=mix(circle_col,bg_col,smoothstep(0,width,dis));\n\nCOLOR=col;", "fragment_ofs":0, "light":"", "light_ofs":0, "vertex":"", "vertex_ofs":0 }
@@ -15,10 +13,20 @@ shader_param/radius = 0.4
 shader_param/width = 0.01
 shader_param/pos = Vector2( 0.5, 0.5 )
 
-[node name="Sprite" type="Sprite"]
+[sub_resource type="ImageTexture" id=3]
 
+resource/name = "dummy.png"
+flags = 5
+image = Image( 1, 1, 0, RGB, 255, 255, 255 )
+size = Vector2( 1, 1 )
+storage = 0
+lossy_quality = 0.7
+
+[node name="ShaderCircle" type="Sprite"]
+
+visibility/opacity = 0.2
 material/material = SubResource( 2 )
 transform/scale = Vector2( 500, 500 )
-texture = ExtResource( 1 )
+texture = SubResource( 3 )
 
 

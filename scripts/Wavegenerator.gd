@@ -29,8 +29,11 @@ func _ready():
 		var new_wave = wave.instance()
 		new_wave.set_name("wave" + str(i))
 		new_wave.set_vars(amplitudeArray[i], frequencyArray[i], colorArray[i])
-		#new_wave.cur_circle=circle_scene.instance()
-		#new_wave.cur_line=line_scene.instance()
+		new_wave.cur_circle=circle_scene.instance()
+		new_wave.cur_circle.set_material(new_wave.cur_circle.get_material().duplicate())
+		new_wave.cur_line=line_scene.instance()
+		new_wave.cur_line.set_material(new_wave.cur_line.get_material().duplicate())
+		new_wave.add_childs()
 		# add wave as child to last added wave
 		last_added_child.add_child(new_wave)
 		last_added_child = new_wave

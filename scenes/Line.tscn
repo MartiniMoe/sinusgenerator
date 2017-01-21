@@ -15,7 +15,7 @@ shader_param/width = 0.01
 shader_param/pos1 = Vector2( 0, 0 )
 shader_param/pos2 = Vector2( 1, 1 )
 
-[node name="Line" type="Sprite"]
+[node name="ShaderLine" type="Sprite"]
 
 material/material = SubResource( 2 )
 transform/scale = Vector2( 500, 500 )
