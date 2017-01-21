@@ -5,10 +5,10 @@ var line_scene = preload("res://scenes/Line.tscn")
 var circle_scene = preload("res://scenes/Circle.tscn")
 var wave_shader_scene = preload("res://scenes/Shadersprite.tscn")
 
-var wave_shader_size=Vector2(800,1000)
-var wl_factor=100
+var wave_shader_size=Vector2(1400,1000)
+var wl_factor=30
 
-var wave_start=650
+var wave_start=250
 
 var wave_material
 
@@ -24,8 +24,8 @@ func _ready():
 	get_node("AnimationPlayer").play("Rotation")
 	
 	var wave_shader=wave_shader_scene.instance()
-	wave_shader.set_pos(Vector2(wave_start,0))
 	wave_shader.set_scale(wave_shader_size)
+	wave_shader.set_pos(Vector2(wave_start+0.5*wave_shader_size.x,0))
 	add_child(wave_shader)
 	wave_material=wave_shader.get_material()
 	
@@ -78,5 +78,5 @@ func _fixed_process(delta):
 	
 func _draw():
 	var cur_pos=gamemanager.wave4.current_pos
-	draw_line(cur_pos, Vector2(wave_start-400,cur_pos.y), Color(1,1,1,1), 2.0)
-	draw_circle(Vector2(wave_start-400,cur_pos.y), 4, Color(1,1,1,1))
+	draw_line(cur_pos, Vector2(wave_start,cur_pos.y), Color(1,1,1,1), 2.0)
+	draw_circle(Vector2(wave_start,cur_pos.y), 4, Color(1,1,1,1))
