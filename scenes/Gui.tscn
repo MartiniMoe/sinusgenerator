@@ -633,7 +633,7 @@ transform/pos = Vector2( 237.523, 72.9458 )
 transform/scale = Vector2( 0.2, 0.175 )
 z/z = -3
 texture = ExtResource( 4 )
-modulate = Color( 0.835938, 0.835938, 0.835938, 1 )
+modulate = Color( 0.839844, 0.839844, 0.839844, 1 )
 
 [connection signal="value_changed" from="Wave1/Slider1f" to="." method="_on_Slider1f_value_changed"]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=1]
+[gd_scene load_steps=17 format=1]
 
 [ext_resource path="res://scripts/Menu.gd" type="Script" id=1]
 [ext_resource path="res://sprites/tutorial_button.png" type="Texture" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://sprites/asteroid_01.png" type="Texture" id=11]
 [ext_resource path="res://sprites/asteroid_04.png" type="Texture" id=12]
 [ext_resource path="res://sprites/spiral.png" type="Texture" id=13]
+[ext_resource path="res://scenes/Background.tscn" type="PackedScene" id=14]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -56,9 +57,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 548.0
+margin/left = 580.0
 margin/top = 187.0
-margin/right = 588.0
+margin/right = 620.0
 margin/bottom = 227.0
 
 [node name="btnTutorial" type="TextureButton" parent="Buttons"]
@@ -114,7 +115,7 @@ textures/hover = ExtResource( 7 )
 
 [node name="Sinphony" type="Sprite" parent="."]
 
-transform/pos = Vector2( 648.831, 387.314 )
+transform/pos = Vector2( 681.831, 387.314 )
 transform/scale = Vector2( 0.85, 0.78 )
 texture = ExtResource( 8 )
 
@@ -205,6 +206,8 @@ playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
 autoplay = ""
+
+[node name="Background" parent="." instance=ExtResource( 14 )]
 
 [connection signal="pressed" from="Buttons/btnTutorial" to="." method="_on_btnTutorial_pressed"]
 
