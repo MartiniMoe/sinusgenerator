@@ -20,7 +20,7 @@ func _fixed_process(delta):
 	var pos_y = 0.0
 	var pi=3.1416
 	
-	var factor=2*pi/(wavegen.wave_shader_size.x*wavegen.wl_factor)
+	var factor=2*pi/(wavegen.wl_factor)
 
 	for i in range(4):
 		pos_y += amps[i] * cos( freqs[i] * (t - factor * base_pos.x) + phases[i])

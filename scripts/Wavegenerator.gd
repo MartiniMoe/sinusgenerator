@@ -5,8 +5,8 @@ var line_scene = preload("res://scenes/Line.tscn")
 var circle_scene = preload("res://scenes/Circle.tscn")
 var wave_shader_scene = preload("res://scenes/Shadersprite.tscn")
 
-var wave_shader_size=Vector2(1400,1000)
-var wl_factor=30
+var wave_shader_size=Vector2(800,1000)
+var wl_factor=42000
 
 var wave_start=250
 
@@ -59,10 +59,10 @@ func _fixed_process(delta):
 	var amp3=amp_factor*gamemanager.wave3.amplitude;
 	var amp4=amp_factor*gamemanager.wave4.amplitude;
 	
-	var wl1=wl_factor/gamemanager.wave1.frequency;
-	var wl2=wl_factor/gamemanager.wave2.frequency;
-	var wl3=wl_factor/gamemanager.wave3.frequency;
-	var wl4=wl_factor/gamemanager.wave4.frequency;
+	var wl1=1.0/wave_shader_size.x*wl_factor/gamemanager.wave1.frequency;
+	var wl2=1.0/wave_shader_size.x*wl_factor/gamemanager.wave2.frequency;
+	var wl3=1.0/wave_shader_size.x*wl_factor/gamemanager.wave3.frequency;
+	var wl4=1.0/wave_shader_size.x*wl_factor/gamemanager.wave4.frequency;
 	
 	var ph1=-gamemanager.wave1.angle;
 	var ph2=-gamemanager.wave2.angle;
