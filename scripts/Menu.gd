@@ -18,9 +18,7 @@ func _on_btnExit_pressed():
 	get_tree().quit()
 
 func _on_btnStartGame_pressed():
-	# Start game
 	changeToScene("res://scenes/Level01.tscn")
 
 func _on_btnTutorial_pressed():
-	# Start tutorial
 	changeToScene("res://scenes/Intro.tscn")

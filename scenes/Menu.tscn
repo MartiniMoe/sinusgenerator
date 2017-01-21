@@ -134,13 +134,13 @@ flat = false
 
 [node name="Credits" type="Label" parent="."]
 
-visibility/opacity = 0.72672
+visibility/opacity = 0.736966
 anchor/left = 3
 anchor/top = 3
 anchor/right = 3
 anchor/bottom = 3
 rect/rotation = 21.8791
-rect/scale = Vector2( 0.954453, 0.954453 )
+rect/scale = Vector2( 0.956161, 0.956161 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
