@@ -4,7 +4,7 @@
 
 [sub_resource type="CanvasItemShader" id=1]
 
-_code = { "fragment":"uniform vec4 line_col;\nuniform float width;\nuniform vec2 pos1;\nuniform vec2 pos2;\n\nvec4 bg_col=vec4(line_col.rgb,0);\n\nvec2 tang=normalize(pos2-pos1);\nvec2 nor=vec2(tang.y,-tang.x);\n\nfloat dis=abs(dot(nor,UV-pos1));\nif(pos1.x==pos2.x && pos1.y==pos2.y){\n\tdis=length(UV-pos1);\n}\nif(dot(tang,UV-pos1)<0){\n\tdis=length(UV-pos1);\n}\nif(dot(tang,UV-pos2)>0){\n\tdis=length(UV-pos2);\n}\n/*\nelse{\n\tif(dot(tang,UV-pos1)>1){\n\t\tdis=length(UV-pos2);\n\t}\n}\n*/\nvec4 col=mix(line_col,bg_col,smoothstep(0,width,dis));\n\nCOLOR=col;", "fragment_ofs":0, "light":"", "light_ofs":0, "vertex":"", "vertex_ofs":0 }
+_code = { "fragment":"uniform vec4 line_col;\nuniform float width;\nuniform vec2 pos1;\nuniform vec2 pos2;\n\nvec4 bg_col=vec4(line_col.rgb,0);\n\nvec2 tang=normalize(pos2-pos1);\nvec2 nor=vec2(tang.y,-tang.x);\n\nfloat dis=abs(dot(nor,UV-pos1));\nif(pos1.x==pos2.x && pos1.y==pos2.y){\n\tdis=length(UV-pos1);\n}\nif(dot(tang,UV-pos1)<0){\n\tdis=length(UV-pos1);\n}\nif(dot(tang,UV-pos2)>0){\n\tdis=length(UV-pos2);\n}\n\nvec4 col=mix(line_col,bg_col,smoothstep(0,width,dis));\n\nCOLOR=col;", "fragment_ofs":0, "light":"", "light_ofs":0, "vertex":"", "vertex_ofs":0 }
 
 [sub_resource type="CanvasItemMaterial" id=2]
 

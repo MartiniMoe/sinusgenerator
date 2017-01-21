@@ -208,6 +208,59 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
+[node name="Phase" type="VSplitContainer" parent="Waves/HSplitContainer/Wave1/Sliders"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 32.0
+margin/top = 0.0
+margin/right = 48.0
+margin/bottom = 143.0
+split/offset = 0
+split/collapsed = true
+split/dragger_visibility = 2
+
+[node name="Slider1p" type="VSlider" parent="Waves/HSplitContainer/Wave1/Sliders/Phase"]
+
+rect/min_size = Vector2( 0, 100 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 0
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 16.0
+margin/bottom = 100.0
+range/min = 0.0
+range/max = 6.28319
+range/step = 0.1
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+tick_count = 0
+ticks_on_borders = false
+focus_mode = 2
+
+[node name="Label" type="Label" parent="Waves/HSplitContainer/Wave1/Sliders/Phase"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 112.0
+margin/right = 16.0
+margin/bottom = 131.0
+custom_fonts/font = SubResource( 2 )
+text = "P"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
 [node name="Wave2" type="VSplitContainer" parent="Waves/HSplitContainer"]
 
 focus/ignore_mouse = false
@@ -359,6 +412,59 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
+[node name="Phase" type="VSplitContainer" parent="Waves/HSplitContainer/Wave2/Sliders"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 32.0
+margin/top = 0.0
+margin/right = 48.0
+margin/bottom = 143.0
+split/offset = 0
+split/collapsed = true
+split/dragger_visibility = 2
+
+[node name="Slider2p" type="VSlider" parent="Waves/HSplitContainer/Wave2/Sliders/Phase"]
+
+rect/min_size = Vector2( 0, 100 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 0
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 16.0
+margin/bottom = 100.0
+range/min = 0.0
+range/max = 6.28319
+range/step = 0.1
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+tick_count = 0
+ticks_on_borders = false
+focus_mode = 2
+
+[node name="Label" type="Label" parent="Waves/HSplitContainer/Wave2/Sliders/Phase"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 112.0
+margin/right = 16.0
+margin/bottom = 131.0
+custom_fonts/font = SubResource( 2 )
+text = "P"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
 [node name="HSplitContainer2" type="HSplitContainer" parent="Waves"]
 
 focus/ignore_mouse = false
@@ -444,8 +550,8 @@ margin/top = 0.0
 margin/right = 16.0
 margin/bottom = 100.0
 range/min = 0.0
-range/max = 400.0
-range/step = 1.0
+range/max = 6.28319
+range/step = 0.1
 range/page = 0.0
 range/value = 1.0
 range/exp_edit = false
@@ -519,6 +625,59 @@ margin/right = 54.0
 margin/bottom = 131.0
 custom_fonts/font = SubResource( 2 )
 text = "A"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Phase" type="VSplitContainer" parent="Waves/HSplitContainer2/Wave3/Sliders"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 32.0
+margin/top = 0.0
+margin/right = 48.0
+margin/bottom = 143.0
+split/offset = 0
+split/collapsed = true
+split/dragger_visibility = 2
+
+[node name="Slider3p" type="VSlider" parent="Waves/HSplitContainer2/Wave3/Sliders/Phase"]
+
+rect/min_size = Vector2( 0, 100 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 0
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 16.0
+margin/bottom = 100.0
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+tick_count = 0
+ticks_on_borders = false
+focus_mode = 2
+
+[node name="Label" type="Label" parent="Waves/HSplitContainer2/Wave3/Sliders/Phase"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 112.0
+margin/right = 16.0
+margin/bottom = 131.0
+custom_fonts/font = SubResource( 2 )
+text = "P"
 align = 1
 percent_visible = 1.0
 lines_skipped = 0
@@ -675,20 +834,81 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
+[node name="Phase" type="VSplitContainer" parent="Waves/HSplitContainer2/Wave4/Sliders"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 32.0
+margin/top = 0.0
+margin/right = 48.0
+margin/bottom = 143.0
+split/offset = 0
+split/collapsed = true
+split/dragger_visibility = 2
+
+[node name="Slider4p" type="VSlider" parent="Waves/HSplitContainer2/Wave4/Sliders/Phase"]
+
+rect/min_size = Vector2( 0, 100 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 0
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 16.0
+margin/bottom = 100.0
+range/min = 0.0
+range/max = 6.28319
+range/step = 0.1
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+tick_count = 0
+ticks_on_borders = false
+focus_mode = 2
+
+[node name="Label" type="Label" parent="Waves/HSplitContainer2/Wave4/Sliders/Phase"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 112.0
+margin/right = 16.0
+margin/bottom = 131.0
+custom_fonts/font = SubResource( 2 )
+text = "P"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
 [connection signal="value_changed" from="Waves/HSplitContainer/Wave1/Sliders/Frequency/Slider1f" to="." method="_on_Slider1f_value_changed"]
 
 [connection signal="value_changed" from="Waves/HSplitContainer/Wave1/Sliders/Amplitude/Slider1a" to="." method="_on_Slider1a_value_changed"]
+
+[connection signal="value_changed" from="Waves/HSplitContainer/Wave1/Sliders/Phase/Slider1p" to="." method="_on_Slider1p_value_changed"]
 
 [connection signal="value_changed" from="Waves/HSplitContainer/Wave2/Sliders/Frequency/Slider2f" to="." method="_on_Slider2f_value_changed"]
 
 [connection signal="value_changed" from="Waves/HSplitContainer/Wave2/Sliders/Amplitude/Slider2a" to="." method="_on_Slider2a_value_changed"]
 
+[connection signal="value_changed" from="Waves/HSplitContainer/Wave2/Sliders/Phase/Slider2p" to="." method="_on_Slider2p_value_changed"]
+
 [connection signal="value_changed" from="Waves/HSplitContainer2/Wave3/Sliders/Frequency/Slider3f" to="." method="_on_Slider3f_value_changed"]
 
 [connection signal="value_changed" from="Waves/HSplitContainer2/Wave3/Sliders/Amplitude/Slider3a" to="." method="_on_Slider3a_value_changed"]
 
+[connection signal="value_changed" from="Waves/HSplitContainer2/Wave3/Sliders/Phase/Slider3p" to="." method="_on_Slider3p_value_changed"]
+
 [connection signal="value_changed" from="Waves/HSplitContainer2/Wave4/Sliders/Frequency/Slider4f" to="." method="_on_Slider4f_value_changed"]
 
 [connection signal="value_changed" from="Waves/HSplitContainer2/Wave4/Sliders/Amplitude/Slider4a" to="." method="_on_Slider4a_value_changed"]
+
+[connection signal="value_changed" from="Waves/HSplitContainer2/Wave4/Sliders/Phase/Slider4p" to="." method="_on_Slider4p_value_changed"]
 
 

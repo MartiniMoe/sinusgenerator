@@ -2,10 +2,12 @@ extends Node2D
 
 var amplitude = 0
 var frequency = 0
+var angle_offset = 0.0
 var angle = 0.0
 var color = Color(0, 0, 0)
 var center = Vector2(0, 0)
 var current_pos = Vector2(0,0)
+var time = 0.0
 
 var cur_circle
 var cur_line
@@ -27,7 +29,8 @@ func add_childs():
 
 func _fixed_process(delta):
 	center = get_parent().current_pos
-	angle += (gamemanager.time_delta / 100) * (frequency)
+	#angle += (gamemanager.time_delta / 100) * (frequency)
+	angle = time * frequency + angle_offset
 	current_pos = center + Vector2(sin(angle)*amplitude,cos(angle)*amplitude)
 	
 	cur_line.get_material().set_shader_param("pos1",Vector2(0.5,0.5)+.002*center)
@@ -39,8 +42,19 @@ func _fixed_process(delta):
 	circle_mat.set_shader_param("radius",.002*amplitude)
 	circle_mat.set_shader_param("circle_col",color)
 	circle_mat.set_shader_param("width",.003)
+	
+	time += gamemanager.time_delta / 100
 
 func set_vars(amp, freq, col):
 	amplitude = amp
 	frequency = freq
 	color = col
+
+func set_amp(amp):
+	amplitude=amp
+
+func set_freq(freq):
+	frequency=freq
+
+func set_phase(phase):
+	angle_offset=phase
