@@ -4,7 +4,7 @@
 
 [sub_resource type="CanvasItemShader" id=1]
 
-_code = { "fragment":"uniform vec4 wavelen;\nuniform vec4 amp;\nuniform vec4 phase;\nuniform float width;\n\nvec4 fg_col=vec4(1);\nvec4 bg_col=vec4(1,1,1,0);\n\nfloat pi=3.14146;\n\nvec2 uv=UV;\nuv.y-=.5;\n\nfloat wave=0;\nfloat wave_drv=0;\n\nwave+=amp.x*cos(uv.x/wavelen.x*2*pi+phase.x);\nwave_drv+=amp.x/wavelen.x*2*pi*-sin(uv.x/wavelen.x*2*pi+phase.x);\n\nwave+=amp.y*cos(uv.x/wavelen.y*2*pi+phase.y);\nwave_drv+=amp.y/wavelen.y*2*pi*-sin(uv.x/wavelen.y*2*pi+phase.y);\n\nwave+=amp.z*cos(uv.x/wavelen.z*2*pi+phase.z);\nwave_drv+=amp.z/wavelen.z*2*pi*-sin(uv.x/wavelen.z*2*pi+phase.z);\n\nwave+=amp.w*cos(uv.x/wavelen.w*2*pi+phase.w);\nwave_drv+=amp.w/wavelen.w*2*pi*-sin(uv.x/wavelen.w*2*pi+phase.w);\n\nfloat dis=abs(uv.y-wave);\ndis/=length(vec2(1,wave_drv));\n\nvec4 col=mix(fg_col,bg_col,smoothstep(0,width,dis));\n\nCOLOR=col;", "fragment_ofs":0, "light":"", "light_ofs":0, "vertex":"", "vertex_ofs":0 }
+_code = { "fragment":"uniform vec4 wavelen;\nuniform vec4 amp;\nuniform vec4 phase;\nuniform float width;\n\nvec3 border_line=vec3(-1,-1,.85);\n\nvec4 fg_col=vec4(1);\nvec4 bg_col=vec4(1,1,1,0);\n\nfloat pi=3.14146;\n\nvec2 uv=UV;\nuv.y-=.5;\n\nfloat wave=0;\nfloat wave_drv=0;\n\nfloat dis=1000000000.0;\n\n//dis=abs(dot(border_line,vec3(uv,1)));\n\n//if(1==1 && dot(border_line,vec3(uv,1))>0){\n{\n\twave+=amp.x*cos(uv.x/wavelen.x*2*pi+phase.x);\n\twave_drv+=amp.x/wavelen.x*2*pi*-sin(uv.x/wavelen.x*2*pi+phase.x);\n\t\n\twave+=amp.y*cos(uv.x/wavelen.y*2*pi+phase.y);\n\twave_drv+=amp.y/wavelen.y*2*pi*-sin(uv.x/wavelen.y*2*pi+phase.y);\n\t\n\twave+=amp.z*cos(uv.x/wavelen.z*2*pi+phase.z);\n\twave_drv+=amp.z/wavelen.z*2*pi*-sin(uv.x/wavelen.z*2*pi+phase.z);\n\t\n\twave+=amp.w*cos(uv.x/wavelen.w*2*pi+phase.w);\n\twave_drv+=amp.w/wavelen.w*2*pi*-sin(uv.x/wavelen.w*2*pi+phase.w);\n\t\n\tdis=abs(uv.y-wave);\n\tdis/=length(vec2(1,wave_drv));\n}\n\nvec4 col=mix(fg_col,bg_col,smoothstep(0,width,dis));\n\nCOLOR=col;", "fragment_ofs":0, "light":"", "light_ofs":0, "vertex":"", "vertex_ofs":0 }
 
 [sub_resource type="CanvasItemMaterial" id=2]
 
@@ -18,8 +18,6 @@ shader_param/width = 0.0
 [node name="Sprite" type="Sprite"]
 
 material/material = SubResource( 2 )
-transform/scale = Vector2( 1000, 1000 )
 texture = ExtResource( 1 )
-offset = Vector2( 0.75, 0 )
 
 

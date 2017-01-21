@@ -9,6 +9,8 @@ var center = Vector2(0, 0)
 var current_pos = Vector2(0,0)
 var time = 0.0
 
+var sprite_size=800
+
 var cur_circle
 var cur_line
 
@@ -36,13 +38,13 @@ func _fixed_process(delta):
 	angle = time * frequency + angle_offset
 	current_pos = center + Vector2(sin(angle)*amplitude,cos(angle)*amplitude)
 	
-	cur_line.get_material().set_shader_param("pos1",Vector2(0.5,0.5)+.002*center)
-	cur_line.get_material().set_shader_param("pos2",Vector2(0.5,0.5)+.002*current_pos)
+	cur_line.get_material().set_shader_param("pos1",Vector2(0.5,0.5)+1.0/sprite_size*center)
+	cur_line.get_material().set_shader_param("pos2",Vector2(0.5,0.5)+1.0/sprite_size*current_pos)
 	cur_line.get_material().set_shader_param("width",.003)
 	cur_line.get_material().set_shader_param("line_col",color)
 	
-	circle_mat.set_shader_param("pos",Vector2(0.5,0.5)+.002*center)
-	circle_mat.set_shader_param("radius",.002*amplitude)
+	circle_mat.set_shader_param("pos",Vector2(0.5,0.5)+1.0/sprite_size*center)
+	circle_mat.set_shader_param("radius",1.0/sprite_size*amplitude)
 	circle_mat.set_shader_param("circle_col",color)
 	circle_mat.set_shader_param("width",.003)
 	
@@ -62,3 +64,4 @@ func set_freq(freq):
 
 func set_phase(phase):
 	angle_offset=phase
+	#angle=phase

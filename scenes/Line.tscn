@@ -18,7 +18,6 @@ shader_param/pos2 = Vector2( 1, 1 )
 [node name="ShaderLine" type="Sprite"]
 
 material/material = SubResource( 2 )
-transform/scale = Vector2( 500, 500 )
 texture = ExtResource( 1 )
 
 
