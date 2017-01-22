@@ -3,12 +3,13 @@ extends Node2D
 var currentLevel
 
 func _ready():
-	pass
+	get_node("LevelAnimationPlayer").play("Flickering")
 
 func loadLevel(path):
 	currentLevel = load(path).instance()
 	add_child(currentLevel)
 	currentLevel.reset_level()
+	get_node("Level").set_text("Stage " + str(currentLevel.number))
 
 func nextLevel():
 	var nextLevelNumber = currentLevel.number + 1
