@@ -38,63 +38,63 @@ amp4 = 0.0
 
 [node name="a" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 542.404, 322.479 )
+transform/pos = Vector2( 542.404, 219.622 )
 
 [node name="g" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1358.52, 374.159 )
+transform/pos = Vector2( 1358.52, 462.73 )
 
 [node name="h" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1509.25, 283.719 )
+transform/pos = Vector2( 1509.25, 208.005 )
 
 [node name="c" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 728.136, 292.837 )
+transform/pos = Vector2( 728.136, 217.123 )
 
 [node name="o" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1890.94, 301.45 )
+transform/pos = Vector2( 1890.94, 225.736 )
 
 [node name="e" parent="." instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 976.652, 406.806 )
+transform/pos = Vector2( 976.652, 495.377 )
 
 [node name="b" parent="." instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 636.327, 302.335 )
+transform/pos = Vector2( 636.327, 226.621 )
 
 [node name="d" parent="." instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 835.773, 383.063 )
+transform/pos = Vector2( 835.773, 471.634 )
 
 [node name="i" parent="." instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 1436.56, 378.756 )
+transform/pos = Vector2( 1436.56, 467.327 )
 
 [node name="n" parent="." instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 1832.77, 404.596 )
+transform/pos = Vector2( 1832.77, 493.167 )
 
 [node name="j" parent="." instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 1593.75, 277.549 )
+transform/pos = Vector2( 1593.75, 201.835 )
 
 [node name="k" parent="." instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 1664.81, 260.322 )
+transform/pos = Vector2( 1664.81, 184.608 )
 
 [node name="l" parent="." instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 1727.26, 286.162 )
+transform/pos = Vector2( 1727.26, 210.448 )
 
 [node name="m" parent="." instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 1794.01, 380.909 )
+transform/pos = Vector2( 1794.01, 469.48 )
 
 [node name="f" parent="." instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 1150.77, 234.27 )
+transform/pos = Vector2( 1150.77, 158.556 )
 
 [node name="Goal" parent="." instance=ExtResource( 8 )]
 

@@ -19,7 +19,7 @@ func _ready():
 	base_pos = get_pos() - local_base_pos_offset
 	
 	#reasons…
-	local_base_pos_offset.y=base_pos.y
+	#local_base_pos_offset.y=base_pos.y
 	
 	set_fixed_process(true)
 
@@ -36,6 +36,7 @@ func eval_wave(pos_x,freqs,phases,amps):
 
 var colliding = false
 func _fixed_process(delta):
+	
 	t += delta / 100
 
 	var wv1=gamemanager.wave1
@@ -61,10 +62,11 @@ func _fixed_process(delta):
 	var global_scale=get_global_pos()
 	
 	global_base_pos_offset=get_global_pos() - get_pos()
-
-	set_global_pos(global_scale*(global_base_pos_offset+wanted_wave_point+local_base_pos_offset))
 	
-	var global_actual_wave_point=global_scale*(global_base_pos_offset+actual_wave_point+local_base_pos_offset)
+	var global_wanted_wave_point=global_scale*(global_base_pos_offset+wanted_wave_point+local_base_pos_offset+Vector2(0,base_pos.y))
+	var global_actual_wave_point=global_scale*(global_base_pos_offset+actual_wave_point+local_base_pos_offset+Vector2(0,340))
+
+	set_global_pos(global_wanted_wave_point)
 
 	if rect.has_point(global_actual_wave_point):
 		get_node("Particles2D").set_emitting(true)
