@@ -12,11 +12,11 @@ func _ready():
 	wavegen=gamemanager.wavegenerator
 	base_pos = self.get_pos() - Vector2(wavegen.wave_start*2,0)
 	set_fixed_process(true)
-	
-func eval_wave(pos_x):
+
+func eval_wave(pos_x,freqs,phases,amps):
 	var pos_y = 0.0
 	var pi=3.1416
-	
+
 	var factor=2*pi/(wavegen.wl_factor)
 
 	for i in range(4):
@@ -26,18 +26,30 @@ func eval_wave(pos_x):
 
 func _fixed_process(delta):
 	t += delta / 100
-	
-	var pos_y = eval_wave(base_pos.x)
 
-	var pos = get_node("Sprite").get_global_pos()
+	var pos_y = eval_wave(base_pos.x,freqs,phases,amps)
+
 	var size = get_node("Sprite").get_texture().get_size()
 	size *= get_node("Sprite").get_scale()
-	var rect = Rect2(pos, size)
-	#print (rect)
-	
-	var eval_point=Vector2(get_pos().x,eval_wave(get_pos().x))
-	
-	if rect.has_point(get_viewport().get_mouse_pos()):
-		print("collision")
-	
-	self.set_pos(Vector2(base_pos.x+wavegen.wave_start*2, base_pos.y + pos_y))
+	var rect = Rect2(Vector2(base_pos.x,pos_y)-0.5*size, size)
+	#var rect = Rect2(get_node("Sprite").get_global_pos()-0.5*size, size)
+
+	var wv1=gamemanager.wave1
+	var wv2=gamemanager.wave2
+	var wv3=gamemanager.wave3
+	var wv4=gamemanager.wave4
+
+	var real_freqs=[wv1.frequency,wv2.frequency,wv3.frequency,wv4.frequency]
+	var real_amps=[wv1.amplitude,wv2.amplitude,wv3.amplitude,wv4.amplitude]
+	var real_phases=[wv1.angle_offset,wv2.angle_offset,wv3.angle_offset,wv4.angle_offset]
+
+	var eval_point=Vector2(base_pos.x,eval_wave(base_pos.x,real_freqs,real_phases,real_amps))
+
+	#print(eval_point)
+	#print(Vector2(base_pos.x,pos_y))
+
+	set_pos(Vector2(base_pos.x+wavegen.wave_start*2, base_pos.y + pos_y))
+
+	#if rect.has_point(get_viewport().get_mouse_pos()):
+	if rect.has_point(eval_point):
+		print("collision!")
