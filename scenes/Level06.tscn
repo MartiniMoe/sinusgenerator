@@ -1,0 +1,96 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://scripts/Level.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Wavegenerator.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scripts/WaveInfo.gd" type="Script" id=3]
+[ext_resource path="res://scenes/Goal.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Obstacle7.tscn" type="PackedScene" id=5]
+
+[node name="Level06" type="Node2D"]
+
+transform/scale = Vector2( 0.7, 0.7 )
+script/script = ExtResource( 1 )
+number = 6
+
+[node name="Wavegenerator" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 250, 320 )
+
+[node name="WaveInfo" type="Node2D" parent="."]
+
+script/script = ExtResource( 3 )
+difficulty = 3
+freq1 = 150.0
+phase1 = 0.0
+amp1 = 50.0
+freq2 = 100.0
+phase2 = 25.0
+amp2 = 100.0
+freq3 = 50.0
+phase3 = 50.0
+amp3 = 150.0
+freq4 = 20.0
+phase4 = 0.0
+amp4 = 0.0
+
+[node name="Goal" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1920.57, 320.571 )
+
+[node name="Obstacle5" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 606.516, 442.353 )
+
+[node name="Obstacle6" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 738.484, 460.336 )
+
+[node name="Obstacle7" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 935.188, 442.353 )
+
+[node name="Obstacle8" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 1077.94, 442.353 )
+
+[node name="Obstacle9" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 1253.07, 474.721 )
+
+[node name="Obstacle10" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 1406.52, 442.353 )
+
+[node name="Obstacle11" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 1567.26, 453.143 )
+
+[node name="Obstacle5 2" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 720.802, 213.782 )
+
+[node name="Obstacle53" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 877.945, 185.211 )
+
+[node name="Obstacle54" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 1035.09, 213.782 )
+
+[node name="Obstacle55" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 1192.23, 185.211 )
+
+[node name="Obstacle56" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 1360.9, 213.782 )
+
+[node name="Obstacle57" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 1520.8, 213.782 )
+
+[node name="Obstacle58" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 1677.95, 213.782 )
+
+

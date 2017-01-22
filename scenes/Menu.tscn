@@ -12,7 +12,7 @@
 [ext_resource path="res://sprites/green_bubble.png" type="Texture" id=10]
 [ext_resource path="res://sprites/asteroid_01.png" type="Texture" id=11]
 [ext_resource path="res://sprites/asteroid_04.png" type="Texture" id=12]
-[ext_resource path="res://sprites/spiral.png" type="Texture" id=13]
+[ext_resource path="res://sprites/bigspiral.png" type="Texture" id=13]
 [ext_resource path="res://fonts/Hack-Regular.ttf" type="DynamicFontData" id=14]
 [ext_resource path="res://scenes/Background.tscn" type="PackedScene" id=15]
 

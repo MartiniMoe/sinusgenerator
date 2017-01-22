@@ -1,0 +1,75 @@
+[gd_scene load_steps=8 format=1]
+
+[ext_resource path="res://scripts/Level.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Wavegenerator.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scripts/WaveInfo.gd" type="Script" id=3]
+[ext_resource path="res://scenes/Obstacle4.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Goal.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/Obstacle1.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/Obstacle7.tscn" type="PackedScene" id=7]
+
+[node name="Level05" type="Node2D"]
+
+transform/scale = Vector2( 0.7, 0.7 )
+script/script = ExtResource( 1 )
+number = 5
+
+[node name="Wavegenerator" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 250, 320 )
+
+[node name="WaveInfo" type="Node2D" parent="."]
+
+script/script = ExtResource( 3 )
+difficulty = 3
+freq1 = 100.0
+phase1 = 0.0
+amp1 = 75.0
+freq2 = 150.0
+phase2 = 0.0
+amp2 = 60.0
+freq3 = 100.0
+phase3 = 0.0
+amp3 = 20.0
+freq4 = 20.0
+phase4 = 0.0
+amp4 = 0.0
+
+[node name="Obstacle 2" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1534.18, 459.064 )
+
+[node name="Obstacle6" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 747.038, 537.636 )
+
+[node name="Obstacle3" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1068.47, 530.493 )
+
+[node name="Obstacle4" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 655.609, 229.064 )
+
+[node name="Obstacle5" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1315.61, 213.35 )
+
+[node name="Goal" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 1920.57, 320.571 )
+
+[node name="Obstacle" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 904.524, 212.868 )
+
+[node name="Obstacle1" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 1775.17, 473.791 )
+
+[node name="Obstacle 3" parent="." instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 1307.14, 531.428 )
+transform/scale = Vector2( 1, 1 )
+
+

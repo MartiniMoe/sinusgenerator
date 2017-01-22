@@ -35,138 +35,138 @@ amp4 = 0.0
 
 [node name="a" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 542.404, 272.479 )
+transform/pos = Vector2( 542.404, 248.193 )
 
 [node name="a1" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 628.118, 272.479 )
+transform/pos = Vector2( 628.118, 248.193 )
 
 [node name="a2" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 713.832, 272.479 )
+transform/pos = Vector2( 713.832, 248.193 )
 
 [node name="a3" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 799.547, 272.479 )
+transform/pos = Vector2( 799.547, 248.193 )
 
 [node name="a4" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 885.261, 272.479 )
+transform/pos = Vector2( 885.261, 248.193 )
 
 [node name="a5" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 970.975, 272.479 )
+transform/pos = Vector2( 970.975, 248.193 )
 
 [node name="a6" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1056.69, 272.479 )
+transform/pos = Vector2( 1056.69, 248.193 )
 
 [node name="a7" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1142.4, 272.479 )
+transform/pos = Vector2( 1142.4, 248.193 )
 
 [node name="a8" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1228.12, 272.479 )
+transform/pos = Vector2( 1228.12, 248.193 )
 
 [node name="a9" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1313.83, 272.479 )
+transform/pos = Vector2( 1313.83, 248.193 )
 
 [node name="a10" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1399.55, 272.479 )
+transform/pos = Vector2( 1399.55, 248.193 )
 
 [node name="a11" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1485.26, 272.479 )
+transform/pos = Vector2( 1485.26, 248.193 )
 
 [node name="a12" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1570.98, 272.479 )
+transform/pos = Vector2( 1570.98, 248.193 )
 
 [node name="a13" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1656.69, 272.479 )
+transform/pos = Vector2( 1656.69, 248.193 )
 
 [node name="a14" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1742.41, 272.479 )
+transform/pos = Vector2( 1742.41, 248.193 )
 
 [node name="a15" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1828.12, 272.479 )
+transform/pos = Vector2( 1828.12, 248.193 )
 
 [node name="b" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 585.261, 372.479 )
+transform/pos = Vector2( 585.261, 391.05 )
 
 [node name="b1" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 670.975, 370.093 )
+transform/pos = Vector2( 670.975, 388.664 )
 
 [node name="b2" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 756.69, 370.093 )
+transform/pos = Vector2( 756.69, 388.664 )
 
 [node name="b3" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 842.404, 370.093 )
+transform/pos = Vector2( 842.404, 388.664 )
 
 [node name="b4" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 928.118, 370.093 )
+transform/pos = Vector2( 928.118, 388.664 )
 
 [node name="b5" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1013.83, 370.093 )
+transform/pos = Vector2( 1013.83, 388.664 )
 
 [node name="b6" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1099.55, 370.093 )
+transform/pos = Vector2( 1099.55, 388.664 )
 
 [node name="b7" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1185.26, 370.093 )
+transform/pos = Vector2( 1185.26, 388.664 )
 
 [node name="b8" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1270.98, 370.093 )
+transform/pos = Vector2( 1270.98, 388.664 )
 
 [node name="b9" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1356.69, 370.093 )
+transform/pos = Vector2( 1356.69, 388.664 )
 
 [node name="b10" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1442.41, 370.093 )
+transform/pos = Vector2( 1442.41, 388.664 )
 
 [node name="b11" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1528.12, 370.093 )
+transform/pos = Vector2( 1528.12, 388.664 )
 
 [node name="b12" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1613.83, 370.093 )
+transform/pos = Vector2( 1613.83, 388.664 )
 
 [node name="b13" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1699.55, 370.093 )
+transform/pos = Vector2( 1699.55, 388.664 )
 
 [node name="b14" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1785.26, 370.093 )
+transform/pos = Vector2( 1785.26, 388.664 )
 
 [node name="b15" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1785.26, 370.093 )
+transform/pos = Vector2( 1785.26, 388.664 )
 
 [node name="b16" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1870.98, 370.093 )
+transform/pos = Vector2( 1870.98, 388.664 )
 
 [node name="Goal" parent="." instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 1920.57, 320.571 )
+transform/pos = Vector2( 1920.57, 324.857 )
 
 
