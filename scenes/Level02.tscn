@@ -8,11 +8,11 @@
 [ext_resource path="res://scenes/Obstacle5.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/Obstacle4.tscn" type="PackedScene" id=7]
 
-[node name="Level01" type="Node2D"]
+[node name="Level02" type="Node2D"]
 
 transform/scale = Vector2( 0.7, 0.7 )
 script/script = ExtResource( 1 )
-number = 1
+number = 2
 
 [node name="Wavegenerator" parent="." instance=ExtResource( 2 )]
 
@@ -22,9 +22,9 @@ transform/pos = Vector2( 250, 320 )
 
 script/script = ExtResource( 3 )
 difficulty = 1
-freq1 = 100.0
+freq1 = 120.0
 phase1 = 0.0
-amp1 = 50.0
+amp1 = 80.0
 freq2 = 200.0
 phase2 = 0.0
 amp2 = 0.0
@@ -41,15 +41,11 @@ transform/pos = Vector2( 542.404, 322.479 )
 
 [node name="g" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1358.52, 374.159 )
+transform/pos = Vector2( 1428.82, 295.067 )
 
 [node name="h" parent="." instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 1509.25, 283.719 )
-
-[node name="c" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 728.136, 292.837 )
 
 [node name="o" parent="." instance=ExtResource( 4 )]
 
@@ -57,43 +53,30 @@ transform/pos = Vector2( 1890.94, 301.45 )
 
 [node name="e" parent="." instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 976.652, 406.806 )
+transform/pos = Vector2( 754.021, 245.692 )
 
 [node name="b" parent="." instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 636.327, 302.335 )
+transform/pos = Vector2( 1014.21, 284.759 )
 
 [node name="d" parent="." instance=ExtResource( 6 )]
 
 transform/pos = Vector2( 835.773, 383.063 )
 
-[node name="i" parent="." instance=ExtResource( 6 )]
-
-transform/pos = Vector2( 1436.56, 378.756 )
-
 [node name="n" parent="." instance=ExtResource( 6 )]
 
 transform/pos = Vector2( 1832.77, 404.596 )
-
-[node name="j" parent="." instance=ExtResource( 6 )]
-
-transform/pos = Vector2( 1593.75, 277.549 )
 
 [node name="k" parent="." instance=ExtResource( 6 )]
 
 transform/pos = Vector2( 1664.81, 260.322 )
 
-[node name="l" parent="." instance=ExtResource( 6 )]
-
-transform/pos = Vector2( 1727.26, 286.162 )
-
 [node name="m" parent="." instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 1794.01, 380.909 )
+transform/pos = Vector2( 1170.06, 436.567 )
 
 [node name="f" parent="." instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 1150.77, 234.27 )
-transform/scale = Vector2( 1, 1 )
+transform/pos = Vector2( 1619.47, 497.911 )
 
 

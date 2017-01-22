@@ -66,14 +66,14 @@ func reset_level():
 		gui.get_node("Wave2Locked").show()
 	else:
 		gui.get_node("Wave2").show()
-		gui.get_node("Wave4Locked").hide()
+		gui.get_node("Wave2Locked").hide()
 	
 	if wave_info.difficulty < 3:
 		gui.get_node("Wave3").hide()
 		gui.get_node("Wave3Locked").show()
 	else:
-		gui.get_node("Wave4").show()
-		gui.get_node("Wave4Locked").hide()
+		gui.get_node("Wave3").show()
+		gui.get_node("Wave3Locked").hide()
 	
 	if wave_info.difficulty < 4:
 		gui.get_node("Wave4").hide()
