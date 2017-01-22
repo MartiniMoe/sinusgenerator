@@ -71,8 +71,9 @@ func _fixed_process(delta):
 	#set_pos(Vector2(base_pos.x+wavegen.wave_start*2, base_pos.y + pos_y))
 	set_pos(Vector2(eval_point.x+wavegen.wave_start*2, eval_point.y))
 
-	get_node("Particles2D").set_emitting(false)
+	#get_node("Particles2D").set_emitting(false)
 	#if rect.has_point(get_viewport().get_mouse_pos()):
 	if rect.has_point(eval_point):
 		#print("collision")
-		get_node("Particles2D").set_emitting(true)
+		#get_node("Particles2D").set_emitting(true)
+		pass
