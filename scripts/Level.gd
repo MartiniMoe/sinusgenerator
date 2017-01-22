@@ -1,5 +1,7 @@
 extends Node2D
 
+export var number = 0
+
 func _ready():
 	var wave_info = get_node("WaveInfo")
 	var gui = get_node("/root/Main/Gui")
