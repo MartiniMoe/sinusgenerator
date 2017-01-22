@@ -31,7 +31,6 @@ func _on_Slider1a_value_changed( value ):
 func _on_Slider1p_value_changed( value ):
 	gamemanager.wave1.set_phase(value)
 
-
 func _on_Slider2f_value_changed( value ):
 	gamemanager.wave2.set_freq(value)
 	var updated_offset=gamemanager.wave2.angle-gamemanager.wave2.time*gamemanager.wave2.frequency
@@ -43,7 +42,6 @@ func _on_Slider2a_value_changed( value ):
 
 func _on_Slider2p_value_changed( value ):
 	gamemanager.wave2.set_phase(value)
-
 
 func _on_Slider3f_value_changed( value ):
 	gamemanager.wave3.set_freq(value)

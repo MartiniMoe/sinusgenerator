@@ -8,6 +8,7 @@ func _ready():
 func loadLevel(path):
 	currentLevel = load(path).instance()
 	add_child(currentLevel)
+	currentLevel.reset_level()
 
 func nextLevel():
 	var nextLevelNumber = currentLevel.number + 1
