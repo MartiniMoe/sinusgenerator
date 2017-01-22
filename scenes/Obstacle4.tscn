@@ -14,4 +14,25 @@ texture = ExtResource( 2 )
 region = true
 region_rect = Rect2( 0, 0, 910, 850 )
 
+[node name="Particles2D" type="Particles2D" parent="."]
+
+config/amount = 256
+config/lifetime = 1.0
+params/direction = 0.0
+params/spread = 180.0
+params/linear_velocity = 100.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 1.0
+params/final_size = 1.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+
 
