@@ -29,9 +29,13 @@ func _fixed_process(delta):
 
 	var pos_y = eval_wave(base_pos.x,freqs,phases,amps)
 
-	#var size = get_node("Sprite").get_texture().get_size()
-	#size *= get_node("Sprite").get_scale()
-	#var rect = Rect2(Vector2(base_pos.x,pos_y)-0.5*size, size)
+	var size = get_node("Sprite").get_texture().get_size()
+	size *= get_node("Sprite").get_scale()
+	
+	var reg_rect=get_node("Sprite").get_region_rect()
+	
+	var rect = Rect2(Vector2(base_pos.x,pos_y)-0.5*reg_rect.size, reg_rect.size)
+
 	#var rect = Rect2(get_node("Sprite").get_global_pos()-0.5*size, size)
 	var rect = get_node("Sprite").get_region_rect()
 	rect.pos = get_global_pos()
@@ -59,6 +63,9 @@ func _fixed_process(delta):
 	#eval_point.y += 30
 
 	print("eval: " + str(eval_point))
+	print(reg_rect.size)
+
+	#print(eval_point)
 	#print(Vector2(base_pos.x,pos_y))
 
 	#set_pos(Vector2(base_pos.x+wavegen.wave_start*2, base_pos.y + pos_y))
