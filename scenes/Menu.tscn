@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=1]
+[gd_scene load_steps=19 format=1]
 
 [ext_resource path="res://scripts/Menu.gd" type="Script" id=1]
 [ext_resource path="res://sprites/tutorial_button.png" type="Texture" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://sprites/spiral.png" type="Texture" id=13]
 [ext_resource path="res://fonts/Hack-Regular.ttf" type="DynamicFontData" id=14]
 [ext_resource path="res://scenes/Background.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/Music.tscn" type="PackedScene" id=16]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -208,6 +209,8 @@ blend_times = [  ]
 autoplay = ""
 
 [node name="Background" parent="." instance=ExtResource( 15 )]
+
+[node name="StreamPlayer" parent="." instance=ExtResource( 16 )]
 
 [connection signal="pressed" from="Buttons/btnTutorial" to="." method="_on_btnTutorial_pressed"]
 
