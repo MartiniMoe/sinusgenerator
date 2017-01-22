@@ -167,6 +167,6 @@ transform/pos = Vector2( 1870.98, 388.664 )
 
 [node name="Goal" parent="." instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 1920.57, 324.857 )
+transform/pos = Vector2( 1920.57, 329.462 )
 
 

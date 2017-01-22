@@ -5,7 +5,7 @@ var numCollidingObstacles = 0
 var winTimer = 0
 var timeToWin = 3
 var won = false
-var debug = true
+var debug = false
 
 func _ready():
 	set_fixed_process(true)

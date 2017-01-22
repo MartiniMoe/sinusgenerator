@@ -40,57 +40,71 @@ transform/pos = Vector2( 1920.57, 320.571 )
 [node name="Obstacle5" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 606.516, 442.353 )
+transform/scale = Vector2( 1, 1 )
 
 [node name="Obstacle6" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 738.484, 460.336 )
+transform/scale = Vector2( 1, 1 )
 
 [node name="Obstacle7" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 935.188, 442.353 )
+transform/scale = Vector2( 1, 1 )
 
 [node name="Obstacle8" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1077.94, 442.353 )
+transform/scale = Vector2( 1, 1 )
 
 [node name="Obstacle9" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1253.07, 474.721 )
+transform/scale = Vector2( 1, 1 )
 
 [node name="Obstacle10" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1406.52, 442.353 )
+transform/scale = Vector2( 1, 1 )
 
 [node name="Obstacle11" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1567.26, 453.143 )
+transform/scale = Vector2( 1, 1 )
 
 [node name="Obstacle5 2" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 720.802, 213.782 )
+transform/scale = Vector2( 1, 1 )
 
 [node name="Obstacle53" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 877.945, 185.211 )
+transform/scale = Vector2( 1, 1 )
 
 [node name="Obstacle54" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1035.09, 213.782 )
+transform/scale = Vector2( 1, 1 )
 
 [node name="Obstacle55" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1192.23, 185.211 )
+transform/scale = Vector2( 1, 1 )
 
 [node name="Obstacle56" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1360.9, 213.782 )
+transform/scale = Vector2( 1, 1 )
 
 [node name="Obstacle57" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1520.8, 213.782 )
+transform/scale = Vector2( 1, 1 )
 
 [node name="Obstacle58" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1677.95, 213.782 )
+transform/scale = Vector2( 1, 1 )
 
 
