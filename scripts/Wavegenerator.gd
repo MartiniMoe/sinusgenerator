@@ -80,7 +80,7 @@ func _fixed_process(delta):
 		if obstacle.colliding:
 			collider_min_x=min(obstacle.get_pos().x,collider_min_x)
 			
-	print(collider_min_x)
+	#print(collider_min_x)
 	
 	wave_material.set_shader_param("x_max",(collider_min_x-wave_start*2)/wave_shader_size.x)
 	
