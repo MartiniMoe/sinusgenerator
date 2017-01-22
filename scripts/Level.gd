@@ -1,10 +1,25 @@
 extends Node2D
 
 export var number = 0
+var numCollidingObstacles = 0
+var winTimer = 0
+var timeToWin = 3
 
 func _ready():
-	pass
-	
+	set_fixed_process(true)
+
+func _fixed_process(delta):
+	get_node("Goal/ProgressBar").set_value(winTimer/timeToWin)
+	if numCollidingObstacles == 0:
+		#get_node("Goal/ProgressBar").show()
+		winTimer += delta
+		if winTimer > timeToWin:
+			# WINWIN
+			get_node("/root/Main/NextLevelButtonContainer").show()
+	else:
+		winTimer = 0
+		#get_node("Goal/ProgressBar").hide()
+
 func reset_level():
 	var wave_info = get_node("WaveInfo")
 	var gui = get_node("/root/Main/Gui")

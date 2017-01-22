@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=1]
+[gd_scene load_steps=7 format=1]
 
 [ext_resource path="res://scripts/Goal.gd" type="Script" id=1]
 [ext_resource path="res://sprites/goal.png" type="Texture" id=2]
@@ -8,6 +8,32 @@
 
 offsets = FloatArray( 0, 1 )
 colors = ColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+bg_color = Color( 0, 1, 1, 1 )
+light_color = Color( 0, 1, 1, 1 )
+dark_color = Color( 0, 1, 1, 1 )
+border_size = 0
+border_blend = true
+draw_bg = true
+
+[sub_resource type="StyleBoxFlat" id=3]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+bg_color = Color( 0, 0.356863, 0.392157, 1 )
+light_color = Color( 0, 0.356863, 0.392157, 1 )
+dark_color = Color( 0, 0.356863, 0.392157, 1 )
+border_size = 0
+border_blend = true
+draw_bg = true
 
 [node name="Goal" type="Node2D"]
 
@@ -323,5 +349,27 @@ randomness/spread = 0.6
 randomness/initial_size = 0.5
 randomness/final_size = 0.5
 color/color_ramp = SubResource( 1 )
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+
+rect/rotation = 90.0
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 6.0
+margin/top = 98.0
+margin/right = 206.0
+margin/bottom = 114.0
+custom_styles/fg = SubResource( 2 )
+custom_styles/bg = SubResource( 3 )
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 50.0
+range/exp_edit = false
+range/rounded = false
+percent/visible = false
 
 

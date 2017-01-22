@@ -65,6 +65,9 @@ func _fixed_process(delta):
 	
 	var global_actual_wave_point=global_scale*(global_base_pos_offset+actual_wave_point+local_base_pos_offset)
 
-	get_node("Particles2D").set_emitting(false)
 	if rect.has_point(global_actual_wave_point):
 		get_node("Particles2D").set_emitting(true)
+		get_parent().numCollidingObstacles += 1
+	else:
+		get_node("Particles2D").set_emitting(false)
+		get_parent().numCollidingObstacles -= 1
