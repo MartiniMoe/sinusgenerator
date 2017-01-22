@@ -1,6 +1,7 @@
 extends Node2D
 
 var menuScene = preload("res://scenes/Menu.tscn")
+var number = 0
 
 func _ready():
 	get_node("AnimationPlayer").play("tutorial")
@@ -40,6 +41,13 @@ func _ready():
 			node.amps[1] = wave_info.amp2
 			node.amps[2] = wave_info.amp3
 			node.amps[3] = wave_info.amp4
+
+func reset_level():
+	var gui = get_node("/root/Main/Gui")
+	gui.get_node("Wave1Locked").hide()
+	gui.get_node("Wave2Locked").hide()
+	gui.get_node("Wave3Locked").hide()
+	gui.get_node("Wave4Locked").hide()
 
 func returnToMenu():
 	var root = get_tree().get_root()

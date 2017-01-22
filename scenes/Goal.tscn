@@ -45,6 +45,35 @@ texture = ExtResource( 2 )
 
 [node name="Particles0" type="Particles2D" parent="."]
 
+transform/pos = Vector2( 0, -117 )
+config/amount = 2
+config/lifetime = 2.0
+config/emitting = false
+config/texture = ExtResource( 3 )
+params/direction = 270.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.2
+params/final_size = 0.6
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spread = 0.6
+randomness/initial_size = 0.5
+randomness/final_size = 0.5
+color/color_ramp = SubResource( 1 )
+
+[node name="Particles12" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 0, 116 )
 config/amount = 2
 config/lifetime = 2.0
 config/emitting = false
@@ -72,7 +101,35 @@ color/color_ramp = SubResource( 1 )
 
 [node name="Particles1" type="Particles2D" parent="."]
 
-transform/pos = Vector2( 0, -20 )
+transform/pos = Vector2( 0, -137 )
+config/amount = 2
+config/lifetime = 2.0
+config/emitting = false
+config/texture = ExtResource( 3 )
+params/direction = 270.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.2
+params/final_size = 0.6
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spread = 0.6
+randomness/initial_size = 0.5
+randomness/final_size = 0.5
+color/color_ramp = SubResource( 1 )
+
+[node name="Particles11" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 0, 96 )
 config/amount = 2
 config/lifetime = 2.0
 config/emitting = false
@@ -100,7 +157,35 @@ color/color_ramp = SubResource( 1 )
 
 [node name="Particles2" type="Particles2D" parent="."]
 
-transform/pos = Vector2( 0, -40 )
+transform/pos = Vector2( 0, -157 )
+config/amount = 2
+config/lifetime = 2.0
+config/emitting = false
+config/texture = ExtResource( 3 )
+params/direction = 270.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.2
+params/final_size = 0.6
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spread = 0.6
+randomness/initial_size = 0.5
+randomness/final_size = 0.5
+color/color_ramp = SubResource( 1 )
+
+[node name="Particles13" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 0, 76 )
 config/amount = 2
 config/lifetime = 2.0
 config/emitting = false
@@ -128,7 +213,35 @@ color/color_ramp = SubResource( 1 )
 
 [node name="Particles3" type="Particles2D" parent="."]
 
-transform/pos = Vector2( 0, -60 )
+transform/pos = Vector2( 0, -177 )
+config/amount = 2
+config/lifetime = 2.0
+config/emitting = false
+config/texture = ExtResource( 3 )
+params/direction = 270.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.2
+params/final_size = 0.6
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spread = 0.6
+randomness/initial_size = 0.5
+randomness/final_size = 0.5
+color/color_ramp = SubResource( 1 )
+
+[node name="Particles14" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 0, 56 )
 config/amount = 2
 config/lifetime = 2.0
 config/emitting = false
@@ -156,7 +269,35 @@ color/color_ramp = SubResource( 1 )
 
 [node name="Particles4" type="Particles2D" parent="."]
 
-transform/pos = Vector2( 0, -80 )
+transform/pos = Vector2( 0, -197 )
+config/amount = 2
+config/lifetime = 2.0
+config/emitting = false
+config/texture = ExtResource( 3 )
+params/direction = 270.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.2
+params/final_size = 0.6
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spread = 0.6
+randomness/initial_size = 0.5
+randomness/final_size = 0.5
+color/color_ramp = SubResource( 1 )
+
+[node name="Particles15" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 0, 36 )
 config/amount = 2
 config/lifetime = 2.0
 config/emitting = false
@@ -184,7 +325,35 @@ color/color_ramp = SubResource( 1 )
 
 [node name="Particles5" type="Particles2D" parent="."]
 
-transform/pos = Vector2( 0, -100 )
+transform/pos = Vector2( 0, -217 )
+config/amount = 2
+config/lifetime = 2.0
+config/emitting = false
+config/texture = ExtResource( 3 )
+params/direction = 270.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.2
+params/final_size = 0.6
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spread = 0.6
+randomness/initial_size = 0.5
+randomness/final_size = 0.5
+color/color_ramp = SubResource( 1 )
+
+[node name="Particles16" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 0, 16 )
 config/amount = 2
 config/lifetime = 2.0
 config/emitting = false
@@ -212,7 +381,35 @@ color/color_ramp = SubResource( 1 )
 
 [node name="Particles6" type="Particles2D" parent="."]
 
-transform/pos = Vector2( 0, 20 )
+transform/pos = Vector2( 0, -97 )
+config/amount = 2
+config/lifetime = 2.0
+config/emitting = false
+config/texture = ExtResource( 3 )
+params/direction = 270.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.2
+params/final_size = 0.6
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spread = 0.6
+randomness/initial_size = 0.5
+randomness/final_size = 0.5
+color/color_ramp = SubResource( 1 )
+
+[node name="Particles17" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 0, 136 )
 config/amount = 2
 config/lifetime = 2.0
 config/emitting = false
@@ -240,7 +437,35 @@ color/color_ramp = SubResource( 1 )
 
 [node name="Particles7" type="Particles2D" parent="."]
 
-transform/pos = Vector2( 0, 40 )
+transform/pos = Vector2( 0, -77 )
+config/amount = 2
+config/lifetime = 2.0
+config/emitting = false
+config/texture = ExtResource( 3 )
+params/direction = 270.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.2
+params/final_size = 0.6
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spread = 0.6
+randomness/initial_size = 0.5
+randomness/final_size = 0.5
+color/color_ramp = SubResource( 1 )
+
+[node name="Particles18" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 0, 156 )
 config/amount = 2
 config/lifetime = 2.0
 config/emitting = false
@@ -268,7 +493,35 @@ color/color_ramp = SubResource( 1 )
 
 [node name="Particles8" type="Particles2D" parent="."]
 
-transform/pos = Vector2( 0, 60 )
+transform/pos = Vector2( 0, -57 )
+config/amount = 2
+config/lifetime = 2.0
+config/emitting = false
+config/texture = ExtResource( 3 )
+params/direction = 270.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.2
+params/final_size = 0.6
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spread = 0.6
+randomness/initial_size = 0.5
+randomness/final_size = 0.5
+color/color_ramp = SubResource( 1 )
+
+[node name="Particles19" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 0, 176 )
 config/amount = 2
 config/lifetime = 2.0
 config/emitting = false
@@ -296,7 +549,35 @@ color/color_ramp = SubResource( 1 )
 
 [node name="Particles9" type="Particles2D" parent="."]
 
-transform/pos = Vector2( 0, 80 )
+transform/pos = Vector2( 0, -37 )
+config/amount = 2
+config/lifetime = 2.0
+config/emitting = false
+config/texture = ExtResource( 3 )
+params/direction = 270.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.2
+params/final_size = 0.6
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spread = 0.6
+randomness/initial_size = 0.5
+randomness/final_size = 0.5
+color/color_ramp = SubResource( 1 )
+
+[node name="Particles20" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 0, 196 )
 config/amount = 2
 config/lifetime = 2.0
 config/emitting = false
@@ -324,7 +605,35 @@ color/color_ramp = SubResource( 1 )
 
 [node name="Particles10" type="Particles2D" parent="."]
 
-transform/pos = Vector2( 0, 100 )
+transform/pos = Vector2( 0, -17 )
+config/amount = 2
+config/lifetime = 2.0
+config/emitting = false
+config/texture = ExtResource( 3 )
+params/direction = 270.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.2
+params/final_size = 0.6
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/spread = 0.6
+randomness/initial_size = 0.5
+randomness/final_size = 0.5
+color/color_ramp = SubResource( 1 )
+
+[node name="Particles21" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 0, 216 )
 config/amount = 2
 config/lifetime = 2.0
 config/emitting = false
@@ -358,9 +667,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 6.0
-margin/top = 98.0
-margin/right = 206.0
-margin/bottom = 114.0
+margin/top = 199.0
+margin/right = 406.0
+margin/bottom = 215.0
 custom_styles/fg = SubResource( 2 )
 custom_styles/bg = SubResource( 3 )
 range/min = 0.0

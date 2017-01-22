@@ -17,4 +17,5 @@ func nextLevel():
 	loadLevel("res://scenes/Level%02d.tscn" % nextLevelNumber)
 
 func _on_NextLevelButton_pressed():
+	get_node("NextLevelButtonContainer").hide()
 	nextLevel()

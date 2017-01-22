@@ -9,15 +9,16 @@ func _ready():
 	set_fixed_process(true)
 
 func _fixed_process(delta):
-	get_node("Goal/ProgressBar").set_value((winTimer/timeToWin) * 100)
-	print(numCollidingObstacles)
 	if numCollidingObstacles == 0:
 		winTimer += delta
+		get_node("Goal/ProgressBar").set_value((winTimer/timeToWin) * 100)
 		if winTimer > timeToWin:
 			# WINWIN
+			#get_node("/root/Main/CompleteAnimationPlayer").play("complete")
 			get_node("/root/Main/NextLevelButtonContainer").show()
 	else:
 		winTimer = 0
+		get_node("Goal/ProgressBar").set_value(0)
 
 func reset_level():
 	var wave_info = get_node("WaveInfo")

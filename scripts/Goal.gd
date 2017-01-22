@@ -1,6 +1,6 @@
 extends Node2D
 
-var startTimes = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+var startTimes = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 var timer = 0.0
 
 func _ready():
