@@ -73,7 +73,16 @@ func _fixed_process(delta):
 	wave_material.set_shader_param("amp",Color(amp1,amp2,amp3,amp4))
 	wave_material.set_shader_param("phase",Color(ph1,ph2,ph3,ph4))
 	wave_material.set_shader_param("width",.003)
-	wave_material.set_shader_param("x_max",1)
+	
+	var collider_min_x=100000
+	
+	for obstacle in get_tree().get_nodes_in_group("obstacle"):
+		if obstacle.colliding:
+			collider_min_x=min(obstacle.get_pos().x,collider_min_x)
+			
+	print(collider_min_x)
+	
+	wave_material.set_shader_param("x_max",(collider_min_x-wave_start*2)/wave_shader_size.x)
 	
 	update()
 	
