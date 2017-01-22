@@ -16,7 +16,7 @@ var wave_material
 var current_pos = Vector2(0,0)
 
 var amplitudeArray = [0, 0, 0, 0]
-var frequencyArray = [100, 180, 230, 390]
+var frequencyArray = [50, 80, 100, 130]
 var colorArray = [Color(0.4, 0.4, 0.6), Color(0.5, 0.5, 0.7), Color(0.6, 0.6, 0.8), Color(0.9, 0.9, 1.0)]
 
 func _ready():
