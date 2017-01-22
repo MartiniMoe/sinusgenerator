@@ -20,13 +20,13 @@ transform/pos = Vector2( 250, 320 )
 
 script/script = ExtResource( 3 )
 difficulty = 3
-freq1 = 150.0
+freq1 = 140.0
 phase1 = 0.0
 amp1 = 50.0
 freq2 = 100.0
 phase2 = 25.0
 amp2 = 100.0
-freq3 = 50.0
+freq3 = 60.0
 phase3 = 50.0
 amp3 = 150.0
 freq4 = 20.0

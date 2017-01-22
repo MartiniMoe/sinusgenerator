@@ -23,10 +23,10 @@ transform/pos = Vector2( 250, 320 )
 
 script/script = ExtResource( 3 )
 difficulty = 2
-freq1 = 100.0
+freq1 = 50.0
 phase1 = 0.0
 amp1 = 75.0
-freq2 = 150.0
+freq2 = 115.0
 phase2 = 0.0
 amp2 = 60.0
 freq3 = 50.0
@@ -87,11 +87,9 @@ transform/pos = Vector2( 1920.57, 320.571 )
 [node name="Obstacle" parent="." instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 1018.81, 202.868 )
-transform/scale = Vector2( 1, 1 )
 
 [node name="Obstacle1" parent="." instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 1775.17, 443.791 )
-transform/scale = Vector2( 1, 1 )
 
 
