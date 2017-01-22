@@ -29,10 +29,19 @@ func _fixed_process(delta):
 
 	var pos_y = eval_wave(base_pos.x,freqs,phases,amps)
 
-	var size = get_node("Sprite").get_texture().get_size()
-	size *= get_node("Sprite").get_scale()
-	var rect = Rect2(Vector2(base_pos.x,pos_y)-0.5*size, size)
+	#var size = get_node("Sprite").get_texture().get_size()
+	#size *= get_node("Sprite").get_scale()
+	#var rect = Rect2(Vector2(base_pos.x,pos_y)-0.5*size, size)
 	#var rect = Rect2(get_node("Sprite").get_global_pos()-0.5*size, size)
+	var rect = get_node("Sprite").get_region_rect()
+	rect.pos = get_global_pos()
+	rect.size *= get_node("Sprite").get_scale()
+	print ("rect pos:" + str(rect.pos))
+	print ("  size:" + str(rect.size))
+	
+	# get factors for global pos
+	#var global_wave_x = get_pos().x - get_global_pos().x
+	#var global_wave_y = get_pos().y - get_global_pos().y
 
 	var wv1=gamemanager.wave1
 	var wv2=gamemanager.wave2
@@ -44,12 +53,19 @@ func _fixed_process(delta):
 	var real_phases=[wv1.angle_offset,wv2.angle_offset,wv3.angle_offset,wv4.angle_offset]
 
 	var eval_point=Vector2(base_pos.x,eval_wave(base_pos.x,real_freqs,real_phases,real_amps))
+	#eval_point += gamemanager.wavegenerator.get_node("Sprite").get_global_pos()
+	eval_point += Vector2(wavegen.wave_start*2,0) + get_global_pos()
+	#eval_point.x += - get_pos().x
+	#eval_point.y += 30
 
-	#print(eval_point)
+	print("eval: " + str(eval_point))
 	#print(Vector2(base_pos.x,pos_y))
 
-	set_pos(Vector2(base_pos.x+wavegen.wave_start*2, base_pos.y + pos_y))
+	#set_pos(Vector2(base_pos.x+wavegen.wave_start*2, base_pos.y + pos_y))
+	set_pos(Vector2(eval_point.x+wavegen.wave_start*2, eval_point.y))
 
+	get_node("Particles2D").set_emitting(false)
 	#if rect.has_point(get_viewport().get_mouse_pos()):
 	if rect.has_point(eval_point):
-		print("collision!")
+		#print("collision")
+		get_node("Particles2D").set_emitting(true)
