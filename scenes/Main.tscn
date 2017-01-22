@@ -60,7 +60,7 @@ margin/bottom = 560.0
 
 [node name="NextLevelButtonContainer" type="Sprite" parent="."]
 
-visibility/opacity = 0.0
+visibility/visible = false
 transform/pos = Vector2( 1160.51, 125 )
 transform/scale = Vector2( 0.5, 0.5 )
 z/z = 8

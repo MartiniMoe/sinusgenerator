@@ -17,8 +17,8 @@ func _fixed_process(delta):
 		if winTimer > timeToWin:
 			# WINWIN
 			won = true
-			get_node("/root/Main/CompleteAnimationPlayer").play("complete")
-			#get_node("/root/Main/NextLevelButtonContainer").show()
+			#get_node("/root/Main/CompleteAnimationPlayer").play("complete")
+			get_node("/root/Main/NextLevelButtonContainer").show()
 	else:
 		winTimer = 0
 		get_node("Goal/ProgressBar").set_value(0)
