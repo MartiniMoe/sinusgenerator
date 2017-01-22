@@ -4,18 +4,20 @@ export var number = 0
 var numCollidingObstacles = 0
 var winTimer = 0
 var timeToWin = 3
+var won = false
 
 func _ready():
 	set_fixed_process(true)
 
 func _fixed_process(delta):
-	if numCollidingObstacles == 0:
+	if !won && numCollidingObstacles == 0:
 		winTimer += delta
 		get_node("Goal/ProgressBar").set_value((winTimer/timeToWin) * 100)
 		if winTimer > timeToWin:
 			# WINWIN
-			#get_node("/root/Main/CompleteAnimationPlayer").play("complete")
-			get_node("/root/Main/NextLevelButtonContainer").show()
+			won = true
+			get_node("/root/Main/CompleteAnimationPlayer").play("complete")
+			#get_node("/root/Main/NextLevelButtonContainer").show()
 	else:
 		winTimer = 0
 		get_node("Goal/ProgressBar").set_value(0)
