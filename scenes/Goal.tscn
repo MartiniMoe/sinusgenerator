@@ -15,9 +15,9 @@ content_margin/left = -1.0
 content_margin/right = -1.0
 content_margin/top = -1.0
 content_margin/bottom = -1.0
-bg_color = Color( 0, 1, 1, 1 )
-light_color = Color( 0, 1, 1, 1 )
-dark_color = Color( 0, 1, 1, 1 )
+bg_color = Color( 0.501961, 1, 1, 1 )
+light_color = Color( 0.501961, 1, 1, 1 )
+dark_color = Color( 0.501961, 1, 1, 1 )
 border_size = 0
 border_blend = true
 draw_bg = true
@@ -368,8 +368,8 @@ range/max = 100.0
 range/step = 1.0
 range/page = 0.0
 range/value = 50.0
-range/exp_edit = false
-range/rounded = false
+range/exp_edit = true
+range/rounded = true
 percent/visible = false
 
 

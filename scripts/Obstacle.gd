@@ -34,6 +34,7 @@ func eval_wave(pos_x,freqs,phases,amps):
 
 	return pos_y
 
+var colliding = false
 func _fixed_process(delta):
 	t += delta / 100
 
@@ -67,7 +68,11 @@ func _fixed_process(delta):
 
 	if rect.has_point(global_actual_wave_point):
 		get_node("Particles2D").set_emitting(true)
-		get_parent().numCollidingObstacles += 1
+		if !colliding:
+			get_parent().numCollidingObstacles += 1
+			colliding = true
 	else:
 		get_node("Particles2D").set_emitting(false)
-		get_parent().numCollidingObstacles -= 1
+		if colliding:
+			get_parent().numCollidingObstacles -= 1
+			colliding = false
